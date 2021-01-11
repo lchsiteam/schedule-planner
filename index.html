@@ -169,24 +169,13 @@
           document.getElementById("current-classes")
         ],
         {
-          isContainer: function(el) {
-            return false; // only elements in drake.containers will be taken into account
-          },
-          moves: function(el, source, handle, sibling) {
-            return true; // elements are always draggable by default
-          },
-          accepts: function(el, target, source, sibling) {
-            return true; // elements can be dropped in any of the `containers` by default
-          },
-          invalid: function(el, handle) {
-            return false; // don't prevent any drags from initiating by default
-          },
           copy: function(el, source) {
-            return source === $("all-classes");
-          }, // elements are moved by default, not copied
-          copySortSource: false, // elements in copy-source containers can be reordered
-          revertOnSpill: true, // spilling will put the element back where it was dragged from, if this is true
-          removeOnSpill: false, // spilling will `.remove` the element, if this is true
+            return source === document.getElementById("all-classes");
+          },
+          accepts: function(el, target) {
+            return target !== document.getElementById("all-classes");
+          },
+          removeOnSpill: false // spilling will `.remove` the element, if this is true
         }
       );
     </script>
