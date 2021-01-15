@@ -1,0 +1,82 @@
+[
+    {
+      "className": "Math 12",
+      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
+      "subject": "Math",
+      "classDescription": "",
+      "gradeLevel": 12,
+      "ap": true,
+      "honors": false,
+      "classID": 11116
+    },
+    {
+      "className": "Math 11",
+      "color": "hsla(57, 74.47%, 54.91%, 1.00)",
+      "subject": "Math",
+      "classDescription": "",
+      "gradeLevel": 11,
+      "ap": false,
+      "honors": true,
+      "classID": 11115
+    },
+    {
+      "className": "Math 10",
+      "color": "hsla(31, 72.66%, 50.58%, 1.00)",
+      "subject": "Math",
+      "classDescription": "",
+      "gradeLevel": 10,
+      "ap": false,
+      "honors": false,
+      "classID": 11114
+    },
+    {
+      "className": "Math 9",
+      "color": "hsla(31, 69.70%, 35.65%, 1.00)",
+      "subject": "Math",
+      "classDescription": "",
+      "gradeLevel": 9,
+      "ap": false,
+      "honors": false,
+      "classID": 11113
+    },
+    {
+      "className": "Math 8",
+      "color": "hsla(0, 79.20%, 35.62%, 1.00)",
+      "subject": "Math",
+      "classDescription": "",
+      "gradeLevel": 8,
+      "ap": false,
+      "honors": false,
+      "classID": 11112
+    },
+    {
+      "className": "Math 7",
+      "color": "hsla(0, 69.15%, 58.36%, 1.00)",
+      "subject": "Math",
+      "classDescription": "",
+      "gradeLevel": 7,
+      "ap": false,
+      "honors": false,
+      "classID": 11111
+    },
+    {
+      "className": "Not Math 7",
+      "color": "hsla(0, 69.15%, 58.36%, 1.00)",
+      "subject": "Math",
+      "classDescription": "",
+      "gradeLevel": 7,
+      "ap": false,
+      "honors": false,
+      "classID": 11121
+    },
+    {
+      "className": "Other 7",
+      "color": "hsla(0, 69.15%, 58.36%, 1.00)",
+      "subject": "Math",
+      "classDescription": "",
+      "gradeLevel": 7,
+      "ap": false,
+      "honors": false,
+      "classID": 12111
+    }
+  ]
