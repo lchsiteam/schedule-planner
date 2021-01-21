@@ -1,8 +1,9 @@
+var addClassOpen = false, settingsOpen = false;
 var document = new Document();
+ 
+/* Adding Boxes to UI */
 var container = document.getElementById("current-classes");
 var allClasses = document.getElementById("all-classes");
-var searchBox = document.getElementById("search-searchbox");
-searchBox.onkeyup = function(){sorting()};
 
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
@@ -11,30 +12,55 @@ xmlhttp.onreadystatechange = function() {
     classes.forEach(displayClass);
   }
 };
-xmlhttp.open("GET", "../documents/classes.json", true);
+xmlhttp.open("GET", "documents/defaultClasses.json", true);
 xmlhttp.send();
 
+var json = JSON.parse(getCookie("selectedClasses"));
+json.classIDs.forEach(displayClass);
+
 function displayClass(item, index) {
-  addClassBox(item, false);
-  if (item.selected) {
+  if (item.id != null) {
     addClassBox(item, true);
+  } else {
+    addClassBox(item, false);
   }
 }
 
 function addClassBox(item, selected) {
+  var name = item.className;
+  var color = item.color;
+  var subject = item.subject;
+  var description = item.classDescription;
+  var gradeLevel = item.gradeLevel;
+  var ap = item.ap;
+  var honors = item.honors;
+  var classID = item.classID;
+
   var background = document.createElement("div");
-  background.className = "class-container w-inline-block";
+  background.className = "class-container";
+  background.setAttribute("data-name", name);
+  background.setAttribute("data-subject", subject);
+  background.setAttribute("data-grade-level", gradeLevel);
+  background.setAttribute("data-ap", ap);
+  background.setAttribute("data-honors", honors);
+  background.setAttribute("data-class-id", classID);
 
   var header = document.createElement("div");
   header.className = "class-name";
-  header.innerHTML = item.className;
-  header.style.backgroundColor = item.color;
+  header.innerHTML = name;
+  header.style.backgroundColor = color;
   background.appendChild(header);
 
-  var fullName = document.createElement("div");
-  fullName.className = "class-full-name";
-  fullName.innerHTML = item.fullClassName;
-  background.appendChild(fullName);
+  var descriptionDiv = document.createElement("div");
+  descriptionDiv.innerHTML = description;
+  descriptionDiv.className = "class-desciption";
+  background.appendChild(descriptionDiv);
+
+  var classCode = document.createElement("div");
+  classCode.innerHTML = classID;
+  classCode.className = "class-id"
+  background.appendChild(classCode);
+
 
   if (selected) {
     container.appendChild(background);
@@ -43,20 +69,18 @@ function addClassBox(item, selected) {
   }
 }
 
-function sorting() {
-  var input, filter, classContainer, classes, a, i, txtValue;
-  input = document.getElementById("search-searchbox");
-  filter = input.value.toUpperCase();
-
-  classContainer = document.getElementById("all-classes");
-  classes = classContainer.children;
-  for (i = 0; i < classes.length; i++) {
-    a = classes[i];
-    txtValue = a.children[0].innerHTML;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      classes[i].style.display = "";
-    } else {
-      classes[i].style.display = "none";
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
     }
   }
+  return "";
 }
