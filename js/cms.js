@@ -15,17 +15,22 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("GET", "documents/defaultClasses.json", true);
 xmlhttp.send();
 
+var json = JSON.parse(getCookie("selectedClasses"));
+json.classIDs.forEach(displayClass);
+
 function displayClass(item, index) {
-  addClassBox(item, false);
-  // if (item.selected) {
-  //   addClassBox(item, true);
-  // }
+  if (item.id != null) {
+    addClassBox(item, true);
+  } else {
+    addClassBox(item, false);
+  }
 }
 
 function addClassBox(item, selected) {
   var name = item.className;
   var color = item.color;
   var subject = item.subject;
+  var description = item.classDescription;
   var gradeLevel = item.gradeLevel;
   var ap = item.ap;
   var honors = item.honors;
@@ -46,10 +51,10 @@ function addClassBox(item, selected) {
   header.style.backgroundColor = color;
   background.appendChild(header);
 
-  var subjectDiv = document.createElement("div");
-  subjectDiv.innerHTML = subject;
-  subjectDiv.className = "class-subject";
-  background.appendChild(subjectDiv);
+  var descriptionDiv = document.createElement("div");
+  descriptionDiv.innerHTML = description;
+  descriptionDiv.className = "class-desciption";
+  background.appendChild(descriptionDiv);
 
   var classCode = document.createElement("div");
   classCode.innerHTML = classID;
@@ -62,4 +67,20 @@ function addClassBox(item, selected) {
   } else {
     allClasses.appendChild(background);
   }
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }

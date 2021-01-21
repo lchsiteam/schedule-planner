@@ -3,21 +3,23 @@
       "className": "Math 12",
       "color": "hsla(78, 99.52%, 63.28%, 1.00)",
       "subject": "Math",
-      "classDescription": "",
+      "classDescription": "fdfdfdfdfdf",
       "gradeLevel": 12,
       "ap": true,
       "honors": false,
-      "classID": 11116
+      "classID": 11116,
+      "dailyHomework" : 0
     },
     {
       "className": "Math 11",
       "color": "hsla(57, 74.47%, 54.91%, 1.00)",
       "subject": "Math",
-      "classDescription": "",
+      "classDescription": "kjlgkjldjkgskjgsjkl",
       "gradeLevel": 11,
       "ap": false,
       "honors": true,
-      "classID": 11115
+      "classID": 11115,
+      "dailyHomework" : 0
     },
     {
       "className": "Math 10",
@@ -27,7 +29,8 @@
       "gradeLevel": 10,
       "ap": false,
       "honors": false,
-      "classID": 11114
+      "classID": 11114,
+      "dailyHomework" : 0
     },
     {
       "className": "Math 9",
@@ -37,7 +40,8 @@
       "gradeLevel": 9,
       "ap": false,
       "honors": false,
-      "classID": 11113
+      "classID": 11113,
+      "dailyHomework" : 0
     },
     {
       "className": "Math 8",
@@ -47,7 +51,8 @@
       "gradeLevel": 8,
       "ap": false,
       "honors": false,
-      "classID": 11112
+      "classID": 11112,
+      "dailyHomework" : 0
     },
     {
       "className": "Math 7",
@@ -57,7 +62,8 @@
       "gradeLevel": 7,
       "ap": false,
       "honors": false,
-      "classID": 11111
+      "classID": 11111,
+      "dailyHomework" : 0
     },
     {
       "className": "Not Math 7",
@@ -67,7 +73,8 @@
       "gradeLevel": 7,
       "ap": false,
       "honors": false,
-      "classID": 11121
+      "classID": 11121,
+      "dailyHomework" : 0
     },
     {
       "className": "Other 7",
@@ -77,6 +84,7 @@
       "gradeLevel": 7,
       "ap": false,
       "honors": false,
-      "classID": 12111
+      "classID": 12111,
+      "dailyHomework" : 0
     }
   ]
