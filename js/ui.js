@@ -1,5 +1,3 @@
-var document = new Document();
-
 var gridViewButton = document.getElementById("grid-view");
 var addClassButton = document.getElementById("add-classes");
 var settingsButton = document.getElementById("settings-button");

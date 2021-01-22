@@ -1,29 +1,32 @@
 var addClassOpen = false, settingsOpen = false;
-var document = new Document();
  
 /* Adding Boxes to UI */
 var container = document.getElementById("current-classes");
 var allClasses = document.getElementById("all-classes");
+var classes;
 
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    var classes = JSON.parse(this.responseText);
-    classes.forEach(displayClass);
+    classes = JSON.parse(this.responseText);
+    classes.forEach(displayAllClass);
   }
 };
 xmlhttp.open("GET", "documents/defaultClasses.json", true);
 xmlhttp.send();
 
-var json = JSON.parse(getCookie("selectedClasses"));
-json.classIDs.forEach(displayClass);
+var selectedClaseses = localStorage.getItem("selectedClasses");
+if (selectedClaseses == null) {
+  selectedClaseses = [""];
+}
+console.log(selectedClaseses);
+for (var element in selectedClaseses) {
+  var item = classes[i];
+  addClassBox(item, true);
+}
 
-function displayClass(item, index) {
-  if (item.id != null) {
-    addClassBox(item, true);
-  } else {
-    addClassBox(item, false);
-  }
+function displayAllClass(item, index) {
+  addClassBox(item, false);
 }
 
 function addClassBox(item, selected) {

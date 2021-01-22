@@ -7,8 +7,8 @@
       "gradeLevel": 12,
       "ap": true,
       "honors": false,
-      "classID": 11116,
-      "dailyHomework" : 0
+      "dailyHomework": 0,
+      "classID": 11116
     },
     {
       "className": "Math 11",
@@ -18,8 +18,8 @@
       "gradeLevel": 11,
       "ap": false,
       "honors": true,
-      "classID": 11115,
-      "dailyHomework" : 0
+      "dailyHomework" : 0,
+      "classID": 11115
     },
     {
       "className": "Math 10",
@@ -29,8 +29,8 @@
       "gradeLevel": 10,
       "ap": false,
       "honors": false,
-      "classID": 11114,
-      "dailyHomework" : 0
+      "dailyHomework" : 0,
+      "classID": 11114
     },
     {
       "className": "Math 9",
@@ -40,8 +40,8 @@
       "gradeLevel": 9,
       "ap": false,
       "honors": false,
-      "classID": 11113,
-      "dailyHomework" : 0
+      "dailyHomework" : 0,
+      "classID": 11113
     },
     {
       "className": "Math 8",
@@ -51,8 +51,8 @@
       "gradeLevel": 8,
       "ap": false,
       "honors": false,
-      "classID": 11112,
-      "dailyHomework" : 0
+      "dailyHomework" : 0,
+      "classID": 11112
     },
     {
       "className": "Math 7",
@@ -62,8 +62,8 @@
       "gradeLevel": 7,
       "ap": false,
       "honors": false,
-      "classID": 11111,
-      "dailyHomework" : 0
+      "dailyHomework" : 0,
+      "classID": 11111
     },
     {
       "className": "Not Math 7",
@@ -73,8 +73,8 @@
       "gradeLevel": 7,
       "ap": false,
       "honors": false,
-      "classID": 11121,
-      "dailyHomework" : 0
+      "dailyHomework" : 0,
+      "classID": 11121
     },
     {
       "className": "Other 7",
@@ -84,7 +84,7 @@
       "gradeLevel": 7,
       "ap": false,
       "honors": false,
-      "classID": 12111,
-      "dailyHomework" : 0
+      "dailyHomework" : 0,
+      "classID": 12111
     }
   ]
