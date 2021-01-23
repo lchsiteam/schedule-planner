@@ -17,10 +17,10 @@ xmlhttp.send();
 var selectedClaseses = localStorage.getItem("selectedClasses");
 if (selectedClaseses == null) {
   selectedClaseses = [""];
-}
-console.log(selectedClaseses);
-for (var element in selectedClaseses) {
-  addClassBox(element, true);
+} else {
+  for (var element in selectedClaseses) {
+    addClassBox(element, true);
+  }
 }
 
 function displayAllClass(item, index) {
