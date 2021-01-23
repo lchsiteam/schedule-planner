@@ -40,11 +40,6 @@ function addClassBox(item, selected) {
 
   var background = document.createElement("div");
   background.className = "class-container";
-  background.setAttribute("data-name", name);
-  background.setAttribute("data-subject", subject);
-  background.setAttribute("data-grade-level", gradeLevel);
-  background.setAttribute("data-ap", ap);
-  background.setAttribute("data-honors", honors);
   background.setAttribute("data-class-id", classID);
 
   var header = document.createElement("div");
