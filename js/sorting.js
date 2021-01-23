@@ -57,7 +57,13 @@ function sorting() {
 
     element = classes[i];
     defaultClasses.forEach(element => {
-      
+      if (element.classID == element.getAttribute("data-class-id")) {
+        name = element.className;
+        subject = element.subject;
+        gradeLevel = element.gradeLevel;
+        ap = element.ap;
+        honors = element.honors;
+      }
     });
 
     if (name.toUpperCase().indexOf(input) > -1 ||
