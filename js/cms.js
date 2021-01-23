@@ -20,8 +20,7 @@ if (selectedClaseses == null) {
 }
 console.log(selectedClaseses);
 for (var element in selectedClaseses) {
-  var item = classes[i];
-  addClassBox(item, true);
+  addClassBox(element, true);
 }
 
 function displayAllClass(item, index) {
