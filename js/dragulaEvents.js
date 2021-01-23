@@ -14,11 +14,10 @@ dragula([$("all-classes"), $("current-classes")], {
     }
 })
     .on("drop", function (el) {
-      var classes = window.localStorage.getItem("selectedClasses");
+      var classes = localStorage.getItem("selectedClasses");
       if (classes == null) {
-        localStorage.setItem("selectedClaseses", []);
+        classes = [""];
       }
-
       var id = el.getAttribute("data-class-id");
       classes.push(id);
 
