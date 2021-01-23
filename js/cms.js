@@ -1,6 +1,13 @@
+
+import { classes } from "js/import.js";
+ 
+console.log(classes)
+
 /* Adding Boxes to UI */
 var container = document.getElementById("current-classes");
 var allClasses = document.getElementById("all-classes");
+
+classes.forEach(displayAllClass);
 
 var selectedClaseses = localStorage.getItem("selectedClasses");
 if (selectedClaseses == null) {
