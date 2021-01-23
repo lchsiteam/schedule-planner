@@ -25,6 +25,17 @@ dropDown.addEventListener('change', function () {
   sorting();
 });
 
+var defaultClasses;
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    defaultClasses = JSON.parse(this.responseText);
+  }
+};
+xmlhttp.open("GET", "documents/defaultClasses.json", true);
+xmlhttp.send();
+
 function sorting() {
   var input, apCheck, honorsCheck, gradeCheck, classContainer, classes, element, i, name, subject, gradeLevel, ap, honors, classID;
   input = document.getElementById("search-searchbox").value.toUpperCase();
@@ -45,12 +56,9 @@ function sorting() {
     */
 
     element = classes[i];
-    name = element.getAttribute("data-name");
-    subject = element.getAttribute("data-subject");
-    gradeLevel = element.getAttribute("data-grade-level");
-    ap = element.getAttribute("data-ap");
-    honors = element.getAttribute("data-honors");
-    classID = element.getAttribute("data-class-id");
+    defaultClasses.forEach(element => {
+      
+    });
 
     if (name.toUpperCase().indexOf(input) > -1 ||
           subject.toUpperCase().indexOf(input) > -1 ||
