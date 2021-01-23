@@ -1,3 +1,5 @@
+
+
 function $(id) {
     return document.getElementById(id);
   }
@@ -23,7 +25,7 @@ dragula([$("all-classes"), $("current-classes")], {
 
       localStorage.setItem("currentClasses", classes);
       
-
+      calc()
 
 
 

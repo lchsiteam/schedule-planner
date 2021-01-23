@@ -7,7 +7,7 @@
       "gradeLevel": 12,
       "ap": true,
       "honors": false,
-      "dailyHomework": 0,
+      "dailyHomework": 60,
       "classID": 11116
     },
     {
@@ -18,7 +18,7 @@
       "gradeLevel": 11,
       "ap": false,
       "honors": true,
-      "dailyHomework" : 0,
+      "dailyHomework" : 30,
       "classID": 11115
     },
     {
@@ -29,7 +29,7 @@
       "gradeLevel": 10,
       "ap": false,
       "honors": false,
-      "dailyHomework" : 0,
+      "dailyHomework" : 2,
       "classID": 11114
     },
     {
