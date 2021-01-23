@@ -1,19 +1,6 @@
-var addClassOpen = false, settingsOpen = false;
- 
 /* Adding Boxes to UI */
 var container = document.getElementById("current-classes");
 var allClasses = document.getElementById("all-classes");
-var classes;
-
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    classes = JSON.parse(this.responseText);
-    classes.forEach(displayAllClass);
-  }
-};
-xmlhttp.open("GET", "documents/defaultClasses.json", true);
-xmlhttp.send();
 
 var selectedClaseses = localStorage.getItem("selectedClasses");
 if (selectedClaseses == null) {
