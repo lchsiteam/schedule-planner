@@ -14,7 +14,6 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("GET", "documents/defaultClasses.json", true);
 xmlhttp.send();
 
-
 var selectedClaseses = localStorage.getItem("selectedClasses");
 if (selectedClaseses == null) {
   selectedClaseses = [""];
