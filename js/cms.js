@@ -1,29 +1,30 @@
-var addClassOpen = false, settingsOpen = false;
-var document = new Document();
- 
 /* Adding Boxes to UI */
 var container = document.getElementById("current-classes");
 var allClasses = document.getElementById("all-classes");
 
+var classes;
+
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    var classes = JSON.parse(this.responseText);
-    classes.forEach(displayClass);
+    classes = JSON.parse(this.responseText);
+    classes.forEach(displayAllClass);
   }
 };
 xmlhttp.open("GET", "documents/defaultClasses.json", true);
 xmlhttp.send();
 
-var json = JSON.parse(getCookie("selectedClasses"));
-json.classIDs.forEach(displayClass);
-
-function displayClass(item, index) {
-  if (item.id != null) {
-    addClassBox(item, true);
-  } else {
-    addClassBox(item, false);
+var selectedClaseses = localStorage.getItem("selectedClasses");
+if (selectedClaseses == null) {
+  selectedClaseses = [""];
+} else {
+  for (var element in selectedClaseses) {
+    addClassBox(element, true);
   }
+}
+
+function displayAllClass(item, index) {
+  addClassBox(item, false);
 }
 
 function addClassBox(item, selected) {
@@ -38,11 +39,6 @@ function addClassBox(item, selected) {
 
   var background = document.createElement("div");
   background.className = "class-container";
-  background.setAttribute("data-name", name);
-  background.setAttribute("data-subject", subject);
-  background.setAttribute("data-grade-level", gradeLevel);
-  background.setAttribute("data-ap", ap);
-  background.setAttribute("data-honors", honors);
   background.setAttribute("data-class-id", classID);
 
   var header = document.createElement("div");

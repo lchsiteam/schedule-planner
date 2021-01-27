@@ -1,3 +1,5 @@
+
+
 function $(id) {
     return document.getElementById(id);
   }
@@ -14,50 +16,92 @@ dragula([$("all-classes"), $("current-classes")], {
     }
 })
     .on("drop", function (el) {
-        checkCookie();
-        var selectedClasses = getCookie("selectedClasses");
-        var id = el.getAttribute("data-class-id");
-        var json = JSON.parse(selectedClasses);
-        json.classIDs.push({
-            id
-        })
-        setCookie("selectedClasses", JSON.stringify(json), 365);
+      var classes = localStorage.getItem("selectedClasses");
+      if (classes == null) {
+        classes = [""];
+      }
+      var id = el.getAttribute("data-class-id");
+      classes.push(id);
+
+      localStorage.setItem("currentClasses", classes);
+      
+      calc()
+
+
+
+
+
+        // checkCookie();
+        // var selectedClasses = getCookie("selectedClasses");
+        // var id = el.getAttribute("data-class-id");
+        // var json = JSON.parse(selectedClasses);
+        // json.classIDs.push({
+        //     id
+        // })
+        // setCookie("selectedClasses", JSON.stringify(json), 365);
     }
-    .on("click", function (el) {
-      if (el.parent.class == "selected-classes") {
+    // .on("click", function (el) {
+    //   if (el.parent.class == "selected-classes") {
 
-      } else if (el.parent.class == "all-classes") {
-        
-      }
-    }));
+    //   } else if (el.parent.class == "all-classes") {
 
-    function getCookie(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
+    //   }
+    // }
+    // )
+    );
 
-      function setCookie(cname,cvalue,exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
-        var expires = "expires=" + d.toGMTString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-      }
 
-      function checkCookie() {
-        var user=getCookie("selectedClasses");
-        if (user != "") {
-        } else {
-            setCookie("selectedClasses", "{\"classIDs\":[]}", 365);
-        }
-      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    // function getCookie(cname) {
+    //     var name = cname + "=";
+    //     var decodedCookie = decodeURIComponent(document.cookie);
+    //     var ca = decodedCookie.split(';');
+    //     for(var i = 0; i < ca.length; i++) {
+    //       var c = ca[i];
+    //       while (c.charAt(0) == ' ') {
+    //         c = c.substring(1);
+    //       }
+    //       if (c.indexOf(name) == 0) {
+    //         return c.substring(name.length, c.length);
+    //       }
+    //     }
+    //     return "";
+    //   }
+
+    //   function setCookie(cname,cvalue,exdays) {
+    //     var d = new Date();
+    //     d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    //     var expires = "expires=" + d.toGMTString();
+    //     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    //   }
+
+    //   function checkCookie() {
+    //     var user=getCookie("selectedClasses");
+    //     if (user != "") {
+    //     } else {
+    //         setCookie("selectedClasses", "{\"classIDs\":[]}", 365);
+    //     }
+    //   }

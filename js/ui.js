@@ -1,4 +1,4 @@
-var document = new Document();
+var addClassOpen = false, settingsOpen = false;
 
 var gridViewButton = document.getElementById("grid-view");
 var addClassButton = document.getElementById("add-classes");
