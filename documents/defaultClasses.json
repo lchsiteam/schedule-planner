@@ -8,7 +8,7 @@
       "ap": false,
       "honors": true,
       "dailyHomework": 45,
-      "classID": EL9003,
+      "classID": "EL9003",
       "tags" : ["HSS"]
     },
 		{
@@ -20,7 +20,7 @@
       "ap": true,
       "honors": false,
       "dailyHomework": 60,
-      "classID": WH9005,
+      "classID": "WH9005",
       "tags" : ["EURO"]
     },
     {
@@ -32,7 +32,7 @@
       "ap": false,
       "honors": false,
       "dailyHomework": 30,
-      "classID": WH9006,
+      "classID": "WH9006",
       "tags" : []
     },
     {
@@ -44,7 +44,7 @@
       "ap": false,
       "honors": false,
       "dailyHomework": 30,
-      "classID": AH9007,
+      "classID": "AH9007",
       "tags" : []
     },
     {
@@ -56,7 +56,7 @@
       "ap": false,
       "honors": false,
       "dailyHomework": 30,
-      "classID": GV9010,
+      "classID": "GV9010",
       "tags" : []
     },
     {
@@ -68,7 +68,7 @@
       "ap": true,
       "honors": false,
       "dailyHomework": 60,
-      "classID": AH9008,
+      "classID": "AH9008",
       "tags" : ["APUSH"]
     },
     {
@@ -80,7 +80,7 @@
       "ap": true,
       "honors": false,
       "dailyHomework": 60,
-      "classID": EC9018,
+      "classID": "EC9018",
       "tags" : ["Econ"]
     },
     {
@@ -92,7 +92,7 @@
       "ap": false,
       "honors": false,
       "dailyHomework": 30,
-      "classID": EL9023,
+      "classID": "EL9023",
       "tags" : []
     },
     {
@@ -104,7 +104,7 @@
       "ap": true,
       "honors": false,
       "dailyHomework": 60,
-      "classID": EL9020,
+      "classID": "EL9020",
       "tags" : []
     },
     {
@@ -116,7 +116,7 @@
       "ap": true,
       "honors": false,
       "dailyHomework": 60,
-      "classID": EL9111,
+      "classID": "EL9111",
       "tags" : []
     }
 		
