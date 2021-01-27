@@ -1,7 +1,7 @@
 [
     {
       "className": "Honors Social Science",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
+      "color": "rgba(78, 255, 100, 1.00)",
       "subject": "history",
       "classDescription": "Prerequisite: Grade of “B” or better in 8th grade Social science and a desire to pursue other AP classes offered by the History/Social Science Department.",
       "gradeLevel": 9,
@@ -13,7 +13,7 @@
     },
 		{
       "className": "AP European History",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
+      "color": "rgba(200, 40,40)",
       "subject": "history",
       "classDescription": "Prerequisite: Grade of an A in English 1 and desire to work at a college level. HSS grade of an A recommended.",
       "gradeLevel": 10,
@@ -25,7 +25,7 @@
     },
     {
       "className": "World History",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
+      "color": "rgba(200, 40,40)",
       "subject": "history",
       "classDescription": "No Prerequisites",
       "gradeLevel": 10,
@@ -37,7 +37,7 @@
     },
     {
       "className": "American History",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
+      "color": "rgba(200, 40,40)",
       "subject": "history",
       "classDescription": "No Prerequisites",
       "gradeLevel": 11,
@@ -49,7 +49,7 @@
     },
     {
       "className": "Government/Economics",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
+      "color": "rgba(200, 40,40)",
       "subject": "history",
       "classDescription": "No Prerequisites",
       "gradeLevel": 12,
@@ -61,7 +61,7 @@
     },
     {
       "className": "AP United States History",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
+      "color": "rgba(200, 40,40)",
       "subject": "history",
       "classDescription": "Prerequisite: Grade of A in previous World History class or B or higher in AP European History. It is recommended that this grade be earned in a year long course not in a summer school course.",
       "gradeLevel": 11,
@@ -73,7 +73,7 @@
     },
     {
       "className": "AP Government and Politics of the United States",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
+      "color": "rgba(200, 40,40)",
       "subject": "history",
       "classDescription": "Prerequisite: Grade of A in previous American History class or B or higher in AP United States History. It is recommended that this grade be earned in a year long course not in a summer school course.",
       "gradeLevel": 12,
@@ -85,8 +85,8 @@
     },
     {
       "className": "Psychology",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
-      "subject": "history",
+      "color": "rgba(200, 40,40)",
+      "subject": "elective",
       "classDescription": "Prerequisite: None. Open to students in 11 and 12 only.",
       "gradeLevel": 12,
       "ap": false,
@@ -97,8 +97,8 @@
     },
     {
       "className": "AP Psychology",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
-      "subject": "history",
+      "color": "rgba(200, 40,40)",
+      "subject": "elective",
       "classDescription": "Prerequisite: Open to students in grade 12 only. Some experience in an honors or AP level science or history course recommended",
       "gradeLevel": 12,
       "ap": true,
@@ -109,8 +109,8 @@
     },
     {
       "className": "AP Seminar",
-      "color": "hsla(78, 99.52%, 63.28%, 1.00)",
-      "subject": "history",
+      "color": "rgba(200, 40,40)",
+      "subject": "elective",
       "classDescription": "Prerequisite: Successful completion of an AP English or Social Science class with a grade of a B or higher. For students in the class of 2021 and beyond, desire to enroll in the second course in this sequence, AP Research in academic year 2021-22.",
       "gradeLevel": 12,
       "ap": true,
@@ -118,6 +118,151 @@
       "dailyHomework": 60,
       "classID": "EL9111",
       "tags" : []
-    }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    {
+      "className": "English 1",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "No prerequisites",
+      "gradeLevel": 9,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "EN2002",
+      "tags" : []
+    },
+    {
+      "className": "English 2",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "No prerequisites",
+      "gradeLevel": 10,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "EN2006",
+      "tags" : []
+    },
+    {
+      "className": "English 2 HR",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "Prerequisite: Grade of B or higher in English 1 P and teacher recommendation.",
+      "gradeLevel": 10,
+      "ap": false,
+      "honors": true,
+      "dailyHomework": 45,
+      "classID": "EN2009",
+      "tags" : []
+    },
+    {
+      "className": "English 3",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "No prerequisites",
+      "gradeLevel": 11,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "EN2014",
+      "tags" : []
+    },
+    {
+      "className": "AP English Language and Composition",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "Prerequisite: Grade of an A in English 2 P or a grade of B or higher in English 2 HR P",
+      "gradeLevel": 11,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "EN2018",
+      "tags" : []
+    },
+    {
+      "className": "English 4",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "No prerequisites",
+      "gradeLevel": 11,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "EN2015",
+      "tags" : []
+    },
+    {
+      "className": "AP English Literature and Composition",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "Prerequisite: Grade of a B or higher in AP Language and Composition or English 3 P with a grade of A",
+      "gradeLevel": 12,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "EN2015",
+      "tags" : []
+    },
+
+
+
+
+
+    
 		
+    {
+      "className": "English Language Development 1",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "Prerequisite: Level I placement on the ELPAC",
+      "gradeLevel": 12,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 20,
+      "classID": "EN2108",
+      "tags" : []
+    },
+    {
+      "className": "English Language Development 2",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "Prerequisite: Level II placement on the ELPAC",
+      "gradeLevel": 12,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 20,
+      "classID": "EN2109",
+      "tags" : []
+    },
+    {
+      "className": "English Language Development 3",
+      "color": "rgba(200, 40,40)",
+      "subject": "english",
+      "classDescription": "Prerequisite: Level III placement on the ELPAC",
+      "gradeLevel": 12,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 20,
+      "classID": "EN2110",
+      "tags" : []
+    }
 ]
