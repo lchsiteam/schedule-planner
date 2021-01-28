@@ -18,8 +18,24 @@ var selectedClaseses = localStorage.getItem("selectedClasses");
 if (selectedClaseses == null) {
   selectedClaseses = [""];
 } else {
-  for (var element in selectedClaseses) {
-    addClassBox(element, true);
+  selectedClaseses = selectedClaseses.split(",");
+  console.log(selectedClaseses);
+  for (var x in selectedClaseses) {
+    var element = selectedClaseses[x];
+    if (element != "") {
+      var jsonClass = getId(element);
+      addClassBox(element, true);
+    }
+  }
+}
+
+function getId(id) {
+  for (const classObject in classes) {
+      const element = classes[classObject];
+      if (element.classID == id) {
+        console.log(element);
+        return element;
+      }
   }
 }
 
