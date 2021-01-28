@@ -23,7 +23,9 @@ if (selectedClaseses == null) {
   for (var x in selectedClaseses) {
     var element = selectedClaseses[x];
     if (element != "") {
+      console.log(element);
       var jsonClass = getId(element);
+      console.log(jsonClass);
       addClassBox(element, true);
     }
   }
