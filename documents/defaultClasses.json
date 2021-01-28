@@ -264,5 +264,299 @@
       "dailyHomework": 20,
       "classID": "EN2110",
       "tags" : []
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "className": "LC Math 1",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "No Prerequisites",
+      "gradeLevel": 9,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "MA5031",
+      "tags" : []
+    },
+    {
+      "className": "LC Math 2",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "No Prerequisites",
+      "gradeLevel": 10,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "MA5033",
+      "tags" : []
+    },
+    {
+      "className": "LC Math 3",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "No Prerequisites",
+      "gradeLevel": 11,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "MA5038",
+      "tags" : []
+    },
+    {
+      "className": "LC Math 4",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Grade of B or higher in LC Math 3 or its equivalent.",
+      "gradeLevel": 12,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "MA5036",
+      "tags" : []
+    },
+    {
+      "className": "LC Math 1 Advanced",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Recommended Grade of an A in CC Math 8 or a grade of B or higher in CC Math 8 Advanced and teacher recommendation",
+      "gradeLevel": 9,
+      "ap": false,
+      "honors": true,
+      "dailyHomework": 45,
+      "classID": "MA5032",
+      "tags" : []
+    },
+    {
+      "className": "LC Math 2 Advanced",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Grade of a B or higher in LC Math 1 Advanced and teacher recommendation or grade of an A in LC Math 1, completion of the summer Advanced Topics class with an A, and LC Math 1 teacher recommendation.",
+      "gradeLevel": 10,
+      "ap": false,
+      "honors": true,
+      "dailyHomework": 45,
+      "classID": "MA5034",
+      "tags" : []
+    },
+    {
+      "className": "LC Math 3 Advanced",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Grade of a B or higher in LC Math 2 Advanced and teacher recommendation or grade of an A in LC Math 2, completion of the summer Advanced Topics class with an A, and LC Math 2 teacher recommendation",
+      "gradeLevel": 11,
+      "ap": false,
+      "honors": true,
+      "dailyHomework": 45,
+      "classID": "MA5039",
+      "tags" : []
+    },
+    {
+      "className": "AP Calculus AB",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Grade of B or higher in LC Math 3 Adv. or Grade of B or higher in LC Math 4 or pre-calculus equivalent and teacher recommendation",
+      "gradeLevel": 12,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "MA5013",
+      "tags" : []
+    },
+    {
+      "className": "AP Calculus BC",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Grade of A in LC Math 3 Advanced and teacher recommendation.",
+      "gradeLevel": 12,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "MA5014",
+      "tags" : []
+    },
+    {
+      "className": "AP Statistics",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Recommended Grade B or higher in LC Math 3, or grade of C+ or higher in LC Math 3 Advanced, and teacher recommendation. AP Statistics may be taken concurrently with AP Calculus AB or BC, AP Computer Science A, or Discrete Math. Concurrent enrollment in LC Math 3 Advanced is Not Allowed",
+      "gradeLevel": 12,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 45,
+      "classID": "MA5013",
+      "tags" : ["Stats"]
+    },
+    {
+      "className": "Financial Literacy",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Grade of C or higher in LC Math 3 or its equivalent.",
+      "gradeLevel": 12,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "MA5672",
+      "tags" : ["Stats"]
+    },
+    {
+      "className": "PCC Multivariable Calculus",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Grade of B or higher in AP Calculus BC, Grade of 5 on the BC Calculus AP Exam and teacher recommendation.",
+      "gradeLevel": 12,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "MA5620",
+      "tags" : ["Stats"]
+    },
+    {
+      "className": "PCC Linear Algebra",
+      "color": "rgba(200, 40,40)",
+      "subject": "math",
+      "classDescription": "Prerequisite: Grade of B or higher in PCC Multivariable Calculus and teacher recommendation.",
+      "gradeLevel": 12,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "MA5625",
+      "tags" : ["Stats"]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "className": "Physics in the Universe",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "No Prerequisites",
+      "gradeLevel": 9,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "SC8025",
+      "tags" : []
+    },
+    {
+      "className": "Chemistry in the Earth System",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Grade of “C” or better in previous science class. Grade of “C” or better in LC Math 1 or its equivalent",
+      "gradeLevel": 10,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 20,
+      "classID": "SC8028",
+      "tags" : []
+    },
+    {
+      "className": "Biology: The Living Earth",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Completion of two years of College Prep science with a grade of “C” or higher",
+      "gradeLevel": 11,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "SC8029",
+      "tags" : []
+    },
+    {
+      "className": "Forensics P",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "No Prerequisites",
+      "gradeLevel": 9,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "SC8036",
+      "tags" : []
+    },
+    {
+      "className": "Physics 1 Advanced",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Concurrent enrollment in LC Math 1 Advanced. Placement in course based on 8th Grade Assessment. Meets the Physics Requirement for Graduation.",
+      "gradeLevel": 9,
+      "ap": false,
+      "honors": true,
+      "dailyHomework": 45,
+      "classID": "SC8026",
+      "tags" : []
+    },
+    {
+      "className": "Chemistry in the Earth System Honors",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Recommended Grade of “B” in Physics Advanced or “A” in Physics and concurrent enrollment in Math 2 Advanced or higher math class or its equivalent.",
+      "gradeLevel": 10,
+      "ap": false,
+      "honors": true,
+      "dailyHomework": 40,
+      "classID": "SC8110",
+      "tags" : []
+    },
+    {
+      "className": "AP Biology",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Recommended Grade of “B” or higher in Physics Advanced and Chemistry Honors or Grade of “A” in Physics and Chemistry 1P. Completion of Biology: The Living Earth with a grade of B or higher can alternatively satisfy these requirements.",
+      "gradeLevel": 11,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "SC8030",
+      "tags" : []
+    },
+    {
+      "className": "AP Chemistry",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Grade of “B” or higher in Physics 1 Advanced and Chemistry Honors, or Grade of “A” in Chemistry 1P and Physics 1P. Concurrent enrollment or completion of LC Math 3 Advanced or higher. Priority given to 12th grade students.",
+      "gradeLevel": 11,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "SC8031",
+      "tags" : []
     }
 ]
