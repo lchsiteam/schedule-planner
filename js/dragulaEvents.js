@@ -11,34 +11,24 @@ dragula([$("all-classes"), $("current-classes")], {
     accepts: function (el, target) {
         return target !== document.getElementById("all-classes");
     },
-    removeOnSpill: function (el, source) {
-        return source == document.getElementById("current-classes");
+    invalid: function (el) {
+        return el.parentElement == document.getElementById("current-classes");
     }
 })
     .on("drop", function (el) {
       var classes = localStorage.getItem("selectedClasses");
       if (classes == null) {
         classes = [""];
+      } else {
+        classes = classes.split(",");
       }
+      
       var id = el.getAttribute("data-class-id");
+      
       classes.push(id);
-
-      localStorage.setItem("currentClasses", classes);
+      localStorage.setItem("selectedClasses", classes);
       
       calc()
-
-
-
-
-
-        // checkCookie();
-        // var selectedClasses = getCookie("selectedClasses");
-        // var id = el.getAttribute("data-class-id");
-        // var json = JSON.parse(selectedClasses);
-        // json.classIDs.push({
-        //     id
-        // })
-        // setCookie("selectedClasses", JSON.stringify(json), 365);
     }
     // .on("click", function (el) {
     //   if (el.parent.class == "selected-classes") {
