@@ -76,6 +76,7 @@ function sorting() {
           classes[i].style.display = "none";
         }
 
+        console.log(honors);
     if (apCheck) {
       if (ap != "true") {
         classes[i].style.display = "none";
@@ -86,11 +87,11 @@ function sorting() {
       }
     }
 
-    if (gradeCheck != 0) {
-      if (gradeCheck != gradeLevel) {
-        classes[i].style.display = "none";
-      }
-    }
+    // if (gradeCheck != 0) {
+    //   if (gradeCheck != gradeLevel) {
+    //     classes[i].style.display = "none";
+    //   }
+    // }
   }
 }
 
