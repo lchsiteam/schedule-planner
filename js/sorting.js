@@ -62,6 +62,7 @@ function sorting() {
         subject = Object.subject;
         gradeLevel = Object.gradeLevel;
         ap = Object.ap;
+        console.log(apCheck)
         honors = Object.honors;
       }
     });
@@ -75,15 +76,17 @@ function sorting() {
         } else {
           classes[i].style.display = "none";
         }
-
-        console.log(honors);
     if (apCheck) {
-      if (ap != "true") {
+      if (ap != true) {
         classes[i].style.display = "none";
+      } else {
+        classes[i].style.display = "";
       }
     } else if (honorsCheck) {
-      if (honors != "true") {
+      if (honors != true) {
         classes[i].style.display = "none";
+      } else {
+        classes[i].style.display = "";
       }
     }
 
