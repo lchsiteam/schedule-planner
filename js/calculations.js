@@ -25,7 +25,6 @@ function calc () {
             for (let selectedIndex = 0; selectedIndex < selectedClasses.length; selectedIndex++) {
                 const classCheck = selectedClasses[selectedIndex];
                 if (element.classID == classCheck) {
-                    console.log("made it")
                     totalTime += element.dailyHomework
                 }
                 
