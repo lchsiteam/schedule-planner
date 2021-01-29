@@ -558,5 +558,29 @@
       "dailyHomework": 60,
       "classID": "SC8031",
       "tags" : []
+    },
+    {
+      "className": "AP Environmental Science",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Completion or concurrent enrollment in Biology: The Living Earth or AP Biology.",
+      "gradeLevel": 11,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "SC8034",
+      "tags" : []
+    },
+    {
+      "className": "AP Chemistry",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Grade of “B” or higher in Physics 1 Advanced and Chemistry Honors, or Grade of “A” in Chemistry 1P and Physics 1P. Concurrent enrollment or completion of LC Math 3 Advanced or higher. Priority given to 12th grade students.",
+      "gradeLevel": 11,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "SC8031",
+      "tags" : []
     }
 ]
