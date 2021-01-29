@@ -35,7 +35,7 @@ dragula([$("all-classes"), $("selected-classes")], {
           const element = x[index];
           var id = element.getAttribute("data-class-id")
           classes.push(id);
-      }
+        }
       localStorage.setItem("selectedClasses", classes);
       
       calc()

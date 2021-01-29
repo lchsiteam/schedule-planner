@@ -198,7 +198,7 @@ div {
     outline: none;
 	background: linear-gradient(to bottom, #aaaaff 0%,#ffaaff 100%);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.25);
-    color: #c4c4c4;
+    color: #000000;
     font-size: 15px;
     line-height: 35px;
     font-family: 'Niramit', sans-serif;
@@ -324,8 +324,8 @@ input:checked + .slider:before {
 
 .class-container:hover > .class-desciption {
   height: auto;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 17px;
 }
 
 .class-container:hover {
