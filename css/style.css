@@ -276,7 +276,35 @@ input:checked + .slider:before {
 	right: 0%;
 	bottom: 0%;
 	padding-right: 5px;
-	padding-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.school {
+  width: 100%;
+  height: 20px;
+  background-color: #fc5858;
+  overflow: hidden;
+}
+.homework {
+  width: 100%;
+  height: 0;
+  background-color: #3cf0e1;
+  overflow: hidden;
+}
+.free-time {
+  width: 100%;
+  height: 67%;
+  background-color: #b3f065;
+  overflow: hidden;
+}
+.sleep {
+  width: 100%;
+  height: 33%;
+  background-color: #3d49fc;
+  overflow: hidden;
+}
+.time {
+  padding-top:3%
 }
 
 .class-description {
