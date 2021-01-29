@@ -31,7 +31,6 @@ function getId(id) {
 
 
 function addClassBox(item, selected) {
-  console.log(item)
   var name = item.className;
   var color = item.color;
   var subject = item.subject;
