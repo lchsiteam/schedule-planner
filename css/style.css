@@ -196,7 +196,7 @@ div {
     border-radius: 50px;
     border: none;
     outline: none;
-	background-color: #fff;
+	background: linear-gradient(to bottom, #aaaaff 0%,#ffaaff 100%);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.25);
     color: #c4c4c4;
     font-size: 15px;
@@ -261,7 +261,7 @@ div {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #dedede;
+    background: linear-gradient(to bottom, #aaaaff 0%,#ffaaff 100%);
     border-radius: 34px;
     -webkit-transition: .4s;
     transition: .4s;
@@ -275,13 +275,13 @@ div {
     width: 40px;
     left: 0px;
     bottom: 0px;
-    background-color: #ff6868;
+    background: linear-gradient(to bottom, #ff00aa 0%,#ffaa00 100%);
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked + .slider:before {
-    background-color: #52d062;
+    background: linear-gradient(to bottom, #00ffbb 0%,#bbff00 100%);
     -webkit-transform: translateX(40px);
     -ms-transform: translateX(40px);
     transform: translateX(40px);
