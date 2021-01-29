@@ -11,21 +11,20 @@ dragula([$("all-classes"), $("current-classes")], {
     accepts: function (el, target) {
         return target !== document.getElementById("all-classes");
     },
-    invalid: function (el) {
-        return el.parentElement == document.getElementById("current-classes");
+    removeOnSpill: function (el) {
+  return el.parent == document.getElementById("current-classes");
     }
 })
     .on("drop", function (el) {
-      var classes = localStorage.getItem("selectedClasses");
-      if (classes == null) {
-        classes = [""];
-      } else {
-        classes = classes.split(",");
+      var classes = [];
+      var x = document.getElementById("current-classes").children
+
+        for (let index = 0; index < x.length; index++) {
+          const element = x[index];
+          console.log(element)
+          var id = element.getAttribute("data-class-id")
+          classes.push(id);
       }
-      
-      var id = el.getAttribute("data-class-id");
-      
-      classes.push(id);
       localStorage.setItem("selectedClasses", classes);
       
       calc()

@@ -1,4 +1,3 @@
-/*
 var addClassOpen = false, settingsOpen = false;
 
 var gridViewButton = document.getElementById("grid-view");
@@ -22,4 +21,4 @@ addClassButton.addEventListener('click', function () {
     centerContainer.classList.add("center-elements-shift");
     addClassOpen = true;
   }
-});*/
+});
