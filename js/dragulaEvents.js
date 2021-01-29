@@ -12,10 +12,22 @@ dragula([$("all-classes"), $("current-classes")], {
         return target !== document.getElementById("all-classes");
     },
     removeOnSpill: function (el) {
-  return el.parent == document.getElementById("current-classes");
+      if (el.parent == document.getElementById("current-classes")) {
+        return true;
+      }
     }
 })
     .on("drop", function (el) {
+      update();
+    }
+
+    ).on("remove", function (el) {
+      update();
+    }
+    
+    );
+
+    function update () {
       var classes = [];
       var x = document.getElementById("current-classes").children
 
@@ -28,15 +40,6 @@ dragula([$("all-classes"), $("current-classes")], {
       
       calc()
     }
-    // .on("click", function (el) {
-    //   if (el.parent.class == "selected-classes") {
-
-    //   } else if (el.parent.class == "all-classes") {
-
-    //   }
-    // }
-    // )
-    );
 
 
 
