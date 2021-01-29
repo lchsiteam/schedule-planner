@@ -12,27 +12,16 @@ dragula([$("all-classes"), $("current-classes")], {
         return target !== document.getElementById("all-classes");
     },
     removeOnSpill: function (el) {
-      if (el.parent == document.getElementById("current-classes")) {
-        return true;
-      }
+  return el.parent == document.getElementById("current-classes");
     }
 })
     .on("drop", function (el) {
-      update();
-    }
-
-    ).on("remove", function (el) {
-      update();
-    }
-    
-    );
-
-    function update () {
       var classes = [];
       var x = document.getElementById("current-classes").children
 
         for (let index = 0; index < x.length; index++) {
           const element = x[index];
+          console.log(element)
           var id = element.getAttribute("data-class-id")
           classes.push(id);
       }
@@ -40,6 +29,15 @@ dragula([$("all-classes"), $("current-classes")], {
       
       calc()
     }
+    // .on("click", function (el) {
+    //   if (el.parent.class == "selected-classes") {
+
+    //   } else if (el.parent.class == "all-classes") {
+
+    //   }
+    // }
+    // )
+    );
 
 
 

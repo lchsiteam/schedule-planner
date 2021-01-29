@@ -2,7 +2,7 @@ function calc () {
     var selectedClasses;
 
     selectedClasses = localStorage.getItem("selectedClasses");
-    selectedClasses = selectedClasses.split(',')
+    selectedClasses = ['11116','11115']
 
     var classes;
 
@@ -10,28 +10,27 @@ function calc () {
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             classes = JSON.parse(this.responseText);
-            thing(classes,selectedClasses)
+            console.log('did it')
+            thing(classes)
         }
     };
     xmlhttp.open("GET", "documents/defaultClasses.json", true);
     xmlhttp.send();
 
     
-    function thing (classes,selectedClasses) {
+    function thing (classes) {
+        
         var totalTime = 0;
-        console.log(selectedClasses)
-        for (let classesIndex = 0; classesIndex < classes.length; classesIndex++) {
-            const element = classes[classesIndex];
-            for (let selectedIndex = 0; selectedIndex < selectedClasses.length; selectedIndex++) {
-                const classCheck = selectedClasses[selectedIndex];
-                if (element.classID == classCheck) {
-                    console.log("made it")
-                    totalTime += element.dailyHomework
-                }
-                
-            }
 
+        for (var location in selectedClasses) {
+            id = selectedClasses[location]
+            for (var location2 in classes) {
+                element = classes[location2]
+                if (element.classID == id ) {   
+                    totalTime += element.dailyHomework;
+                }
+            }
         }
-        console.log(totalTime)
+        console.log(totalTime);
     }
 }
