@@ -500,7 +500,7 @@
       "tags" : []
     },
     {
-      "className": "Forensics P",
+      "className": "Forensics",
       "color": "rgba(200, 40,40)",
       "subject": "science",
       "classDescription": "No Prerequisites",
@@ -564,7 +564,7 @@
       "color": "rgba(200, 40,40)",
       "subject": "science",
       "classDescription": "Prerequisite: Completion or concurrent enrollment in Biology: The Living Earth or AP Biology.",
-      "gradeLevel": 11,
+      "gradeLevel": 12,
       "ap": true,
       "honors": false,
       "dailyHomework": 60,
@@ -572,15 +572,51 @@
       "tags" : []
     },
     {
-      "className": "AP Chemistry",
+      "className": "AP Physics 1",
       "color": "rgba(200, 40,40)",
       "subject": "science",
-      "classDescription": "Prerequisite: Grade of “B” or higher in Physics 1 Advanced and Chemistry Honors, or Grade of “A” in Chemistry 1P and Physics 1P. Concurrent enrollment or completion of LC Math 3 Advanced or higher. Priority given to 12th grade students.",
+      "classDescription": "Prerequisite: Recommended Grade of “B” or higher in Physics 1 Advanced or Grade of “A” in Physics 1P. Concurrent enrollment in LC Math 3 Advanced or LC Math 3.",
       "gradeLevel": 11,
       "ap": true,
       "honors": false,
       "dailyHomework": 60,
-      "classID": "SC8031",
+      "classID": "SC8043",
+      "tags" : []
+    },
+    {
+      "className": "AP Physics C",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Grade of “B” or higher in AP Physics 1. Completion or concurrent enrollment in AP Calculus AB or BC or their equivalents.",
+      "gradeLevel": 12,
+      "ap": true,
+      "honors": false,
+      "dailyHomework": 60,
+      "classID": "SC8033",
+      "tags" : []
+    },
+    {
+      "className": "Oceanography",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Grade of “B” or higher in AP Physics 1. Completion or concurrent enrollment in AP Calculus AB or BC or their equivalents.",
+      "gradeLevel": 11,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 30,
+      "classID": "SC8035",
+      "tags" : []
+    },
+    {
+      "className": "Principles of Engineering - PLTW 2",
+      "color": "rgba(200, 40,40)",
+      "subject": "science",
+      "classDescription": "Prerequisite: Completion of PLTW 1 P with grade of C or better",
+      "gradeLevel": 11,
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 0,
+      "classID": "EL4463",
       "tags" : []
     }
 ]
