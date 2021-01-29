@@ -46,7 +46,6 @@ function calc () {
 function output (totalTime,numOfClasses) {
     var freeTime, school;
     
-    formatHours(totalTime, 'total-time')
 
     console.log(numOfClasses)
 
@@ -109,7 +108,7 @@ function output (totalTime,numOfClasses) {
 function formatHours (minutes, element) {
 
     var hoursText, hours, minutesText;
-    hours = Math.ceil(minutes/60)
+    hours = Math.floor(minutes/60)
     minutes = minutes % 60
 
     if (hours == 1) {
