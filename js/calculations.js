@@ -19,7 +19,6 @@ function calc () {
     
     function thing (classes,selectedClasses) {
         var totalTime = 0;
-        console.log(selectedClasses)
         for (let classesIndex = 0; classesIndex < classes.length; classesIndex++) {
             const element = classes[classesIndex];
             for (let selectedIndex = 0; selectedIndex < selectedClasses.length; selectedIndex++) {
@@ -31,6 +30,7 @@ function calc () {
             }
 
         }
+        document.getElementById('total-time').innerHTML = totalTime + ' minutes';
         console.log(totalTime)
     }
 }
