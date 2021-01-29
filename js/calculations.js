@@ -10,14 +10,15 @@ function calc () {
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             classes = JSON.parse(this.responseText);
-            thing(classes,selectedClasses)
+            totalTime = calcTime(classes,selectedClasses)
+            output (totalTime)
         }
     };
     xmlhttp.open("GET", "documents/defaultClasses.json", true);
     xmlhttp.send();
 
     
-    function thing (classes,selectedClasses) {
+    function calcTime (classes,selectedClasses) {
         var totalTime = 0;
         for (let classesIndex = 0; classesIndex < classes.length; classesIndex++) {
             const element = classes[classesIndex];
@@ -30,7 +31,27 @@ function calc () {
             }
 
         }
-        document.getElementById('total-time').innerHTML = totalTime + ' minutes';
-        console.log(totalTime)
+
+        return totalTime
     }
 }
+
+
+    function output (totalTime) {
+        var hours, hoursText, minutes, minutesText
+        hours = Math.floor(totalTime/60)
+        minutes = totalTime % 60
+
+        if (hours == 1) {
+            hoursText = '1 Hour '
+        } else {
+            hoursText = hours + ' Hours '
+        }
+
+        if (minutes == 0) {
+            minutesText = ''
+        } else {
+            minutesText = minutes + ' minutes'
+        }
+        document.getElementById('total-time').innerHTML =  hoursText + minutesText
+    }
