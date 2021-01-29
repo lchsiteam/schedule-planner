@@ -1,8 +1,14 @@
 function calc () {
-    var selectedClasses;
+    var selectedClasses,numOfClasses;
 
     selectedClasses = localStorage.getItem("selectedClasses");
     selectedClasses = selectedClasses.split(',')
+
+    if (selectedClasses[0] == "") {
+        numOfClasses = 0
+    } else {
+        numOfClasses = selectedClasses.length
+    }
 
     var classes;
 
@@ -11,7 +17,7 @@ function calc () {
         if (this.readyState == 4 && this.status == 200) {
             classes = JSON.parse(this.responseText);
             totalTime = calcTime(classes,selectedClasses)
-            output (totalTime)
+            output (totalTime,numOfClasses)
         }
     };
     xmlhttp.open("GET", "documents/defaultClasses.json", true);
@@ -37,7 +43,7 @@ function calc () {
 }
 
 
-    function output (totalTime) {
+    function output (totalTime,numOfClasses) {
         var hours, hoursText, minutes, minutesText
         hours = Math.floor(totalTime/60)
         minutes = totalTime % 60
@@ -54,4 +60,5 @@ function calc () {
             minutesText = minutes + ' minutes'
         }
         document.getElementById('total-time').innerHTML =  hoursText + minutesText
+        console.log(numOfClasses)
     }
