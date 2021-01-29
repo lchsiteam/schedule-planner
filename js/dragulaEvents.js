@@ -4,7 +4,7 @@ function $(id) {
     return document.getElementById(id);
   }
 
-dragula([$("all-classes"), $("current-classes")], { 
+dragula([$("all-classes"), $("selected-classes")], { 
     copy: function (el, source) {
         return source === document.getElementById("all-classes");
     },
@@ -12,16 +12,27 @@ dragula([$("all-classes"), $("current-classes")], {
         return target !== document.getElementById("all-classes");
     },
     removeOnSpill: function (el) {
-  return el.parent == document.getElementById("current-classes");
+      if (el.parent == document.getElementById("selected-classes")) {
+        return true;
+      }
     }
 })
     .on("drop", function (el) {
+      update();
+    }
+
+    ).on("remove", function (el) {
+      update();
+    }
+    
+    );
+
+    function update () {
       var classes = [];
-      var x = document.getElementById("current-classes").children
+      var x = document.getElementById("selected-classes").children
 
         for (let index = 0; index < x.length; index++) {
           const element = x[index];
-          console.log(element)
           var id = element.getAttribute("data-class-id")
           classes.push(id);
       }
@@ -29,15 +40,6 @@ dragula([$("all-classes"), $("current-classes")], {
       
       calc()
     }
-    // .on("click", function (el) {
-    //   if (el.parent.class == "selected-classes") {
-
-    //   } else if (el.parent.class == "all-classes") {
-
-    //   }
-    // }
-    // )
-    );
 
 
 

@@ -1,11 +1,11 @@
 /* Adding Boxes to UI */
-var container = document.getElementById("current-classes");
+var container = document.getElementById("selected-classes");
 var allClasses = document.getElementById("all-classes");
 
 var classes;
 
 var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
+xmlhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     classes = JSON.parse(this.responseText);
     classes.forEach(displayAllClass);
@@ -21,10 +21,10 @@ function displayAllClass(item, index) {
 
 function getId(id) {
   for (const classObject in classes) {
-      const element = classes[classObject];
-      if (element.classID == id) {
-        return element;
-      }
+    const element = classes[classObject];
+    if (element.classID == id) {
+      return element;
+    }
   }
 }
 
@@ -60,6 +60,11 @@ function addClassBox(item, selected) {
   classCode.className = "class-id"
   background.appendChild(classCode);
 
+  var subjectDiv = document.createElement("div");
+  subjectDiv.innerHTML = subject;
+  subjectDiv.className = "class-subject";
+  background.appendChild(subjectDiv);
+
 
   if (selected) {
     container.appendChild(background);
@@ -68,7 +73,7 @@ function addClassBox(item, selected) {
   }
 }
 
-function showSelectedClasses (classes) {
+function showSelectedClasses(classes) {
   var selectedClaseses = localStorage.getItem("selectedClasses");
   if (selectedClaseses == null) {
     selectedClaseses = [];
