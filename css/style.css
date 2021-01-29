@@ -300,25 +300,38 @@ input:checked + .slider:before {
 }
 
 .class-container {
-	position: relative;
-	overflow: hidden;
-	width: 195px;
-	height: 150px;
-	border-radius: 10px;
-	background-color: #fff;
-	margin-right: 5px;
-	margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 195px;
+    min-height: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .class-desciption {
   line-height: 13px;
   font-size: 12px;
+  height: 90px;
   padding: 4px;
   padding-top: 5px;
-	padding-left: 5px;
-  height: 90px;
+    padding-left: 5px;
+    padding-bottom: 22px;
   overflow: hidden;
 }
+
+.class-container:hover > .class-desciption {
+  height: auto;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.class-container:hover {
+  height: fit-content;
+}
+
 /*
 .class-desciption:hover {
   height: 100%;
@@ -336,10 +349,10 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   text-align: center;
-	width: 100%;
-	height: 25%;
-	padding-left: 5px;
-	background-color: #ff4b4b;
+    width: 100%;
+    height: 37.5px;
+    padding-left: 5px;
+    background-color: #ff4b4b;
   
 }
 
