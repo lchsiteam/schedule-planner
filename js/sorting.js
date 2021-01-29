@@ -56,20 +56,20 @@ function sorting() {
     */
 
     element = classes[i];
-    defaultClasses.forEach(element => {
-      if (element.classID == element.getAttribute("data-class-id")) {
-        name = element.className;
-        subject = element.subject;
-        gradeLevel = element.gradeLevel;
-        ap = element.ap;
-        honors = element.honors;
+    defaultClasses.forEach(Object => {
+      if (Object.classID == element.getAttribute("data-class-id")) {
+        name = Object.className;
+        subject = Object.subject;
+        gradeLevel = Object.gradeLevel;
+        ap = Object.ap;
+        honors = Object.honors;
       }
     });
 
     if (name.toUpperCase().indexOf(input) > -1 ||
           subject.toUpperCase().indexOf(input) > -1 ||
-          gradeLevel.toUpperCase().indexOf(input) > -1 ||
-          classID.toUpperCase().indexOf(input) > -1
+          gradeLevel == input > -1 ||
+          classID == input > -1
         ) {
           classes[i].style.display = "";
         } else {
