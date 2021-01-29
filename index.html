@@ -7,6 +7,18 @@
     <meta charset="utf-8" />
     <title>lc-testing</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Roboto Mono:regular,500,600",
+            "Roboto:regular,500,700",
+            "Roboto Mono:regular,700:cyrillic,latin"
+          ]
+        }
+      });
+    </script>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -14,12 +26,20 @@
     <div class="background"></div>
     <div class="app-container">
         <div class="center-elements">
-            <div class="class-times">
-                <div class="sleep-block"></div>
-                <div class="school-block"></div>
-                <div class="freetime-block"></div>
-                <div class="sleep-block"></div>
+          <div class="class-times">
+            <div class="school">
+              <div class="time">School</div>
             </div>
+            <div class="homework">
+              <div class="time">Homework</div>
+            </div>
+            <div class="free-time">
+              <div class="time">Free Time</div>
+            </div>
+            <div class="sleep">
+              <div class="time">Sleep</div>
+            </div>
+          </div>
             <div class="selected-classes" id="selected-classes"></div>
             <div class="search-container">
                 <div class="search-options">
@@ -39,8 +59,8 @@
                     <div class="subject-selector">
                         <select id="search-grade-selector">
                             <option value="0">All</option>
-                            <option value="1">Math</option>
-                            <option value="2">Science</option>
+                            <option value="math">Math</option>
+                            <option value="science">Science</option>
                             <option value="3">9</option>
                             <option value="4">10</option>
                             <option value="5">11</option>
@@ -56,7 +76,9 @@
                     <div class="honors-option">
                         <label class="switch">
                             <input type="checkbox" id="search-honors-option">
-                            <span class="slider">HR HR</span>
+                            <span class="slider">
+                              <div class="slider-text">HR HR</div>
+                            </span>
                         </label>
                     </div>
                 </div>

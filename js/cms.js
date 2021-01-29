@@ -53,6 +53,8 @@ function addClassBox(item, selected) {
   var descriptionDiv = document.createElement("div");
   descriptionDiv.innerHTML = description;
   descriptionDiv.className = "class-desciption";
+  descriptionDiv.placeholder = description;
+  descriptionDiv.title = description;
   background.appendChild(descriptionDiv);
 
   var classCode = document.createElement("div");
@@ -64,7 +66,6 @@ function addClassBox(item, selected) {
   subjectDiv.innerHTML = subject;
   subjectDiv.className = "class-subject";
   background.appendChild(subjectDiv);
-
 
   if (selected) {
     container.appendChild(background);
