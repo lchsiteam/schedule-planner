@@ -21,7 +21,6 @@ dragula([$("all-classes"), $("current-classes")], {
 
         for (let index = 0; index < x.length; index++) {
           const element = x[index];
-          console.log(element)
           var id = element.getAttribute("data-class-id")
           classes.push(id);
       }
