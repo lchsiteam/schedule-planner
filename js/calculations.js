@@ -14,7 +14,7 @@ function calc () {
         }
     };
     xmlhttp.open("GET", "documents/defaultClasses.json", true);
-    xmlhttp.send(); 
+    xmlhttp.send();
 
     
     function thing (classes,selectedClasses) {
