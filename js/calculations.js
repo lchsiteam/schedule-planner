@@ -43,22 +43,86 @@ function calc () {
 }
 
 
-    function output (totalTime,numOfClasses) {
-        var hours, hoursText, minutes, minutesText
-        hours = Math.floor(totalTime/60)
-        minutes = totalTime % 60
+function output (totalTime,numOfClasses) {
+    var freeTime, school;
+    
+    formatHours(totalTime, 'total-time')
 
-        if (hours == 1) {
-            hoursText = '1 Hour '
-        } else {
-            hoursText = hours + ' Hours '
-        }
+    console.log(numOfClasses)
 
-        if (minutes == 0) {
-            minutesText = ''
-        } else {
-            minutesText = minutes + ' minutes'
-        }
-        document.getElementById('total-time').innerHTML =  hoursText + minutesText
-        console.log(numOfClasses)
+    switch (numOfClasses) {
+        case 0:
+            school = 0;
+            break;
+        case 1:
+            school = 60;
+            break;
+        case 2:
+            school = 130;
+            break;
+        case 3:
+            school = 200;
+            break;
+        case 4:
+            school = 270;
+            break;
+        case 5:
+            school = 360;
+            break;
+        case 6:
+            school = 420;
+            break;
+        case 7:
+            school = 480;
+            break;
+        default:
+            school = 480;
     }
+
+    console.log(school)
+
+    homework = totalTime;
+    sleep = 540;
+    freeTime = 1440 - (school + homework + sleep);
+    if (freeTime < 0) {
+        sleep += freeTime;
+        freeTime = 0;
+    }
+
+    document.getElementById('sleep').style.height =  (sleep / 1440 * 100) + "%" ;
+    formatHours(sleep, 'sleep-text')
+
+    document.getElementById('school').style.height =  (school / 1440 * 100) + "%" ;
+    formatHours(school, 'school-text')
+
+    document.getElementById('homework').style.height =  (homework / 1440 * 100) + "%" ;
+    formatHours(homework, 'homework-text')
+
+    document.getElementById('free-time').style.height =  (freeTime / 1440 * 100) + "%" ;
+    formatHours(freeTime, 'free-text')
+    
+
+    
+    console.log(numOfClasses)
+}
+
+function formatHours (minutes, element) {
+
+    var hoursText, hours, minutesText;
+    hours = Math.ceil(minutes/60)
+    minutes = minutes % 60
+
+    if (hours == 1) {
+        hoursText = '1 Hour ';
+    } else {
+        hoursText = hours + ' Hours ';
+    }
+
+    if (minutes == 0) {
+        minutesText = '';
+    } else {
+        minutesText = '\n' +  minutes + ' minutes';
+    }
+    document.getElementById(element).innerHTML = hoursText + minutesText;
+
+}
