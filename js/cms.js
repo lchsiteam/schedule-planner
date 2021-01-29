@@ -39,6 +39,7 @@ function addClassBox(item, selected) {
   var ap = item.ap;
   var honors = item.honors;
   var classID = item.classID;
+  var homeworkTime = item.dailyHomework;
 
   var background = document.createElement("div");
   background.className = "class-container";
@@ -54,7 +55,6 @@ function addClassBox(item, selected) {
   descriptionDiv.innerHTML = description;
   descriptionDiv.className = "class-desciption";
   descriptionDiv.placeholder = description;
-  descriptionDiv.title = description;
   background.appendChild(descriptionDiv);
 
   var classCode = document.createElement("div");
@@ -63,7 +63,7 @@ function addClassBox(item, selected) {
   background.appendChild(classCode);
 
   var subjectDiv = document.createElement("div");
-  subjectDiv.innerHTML = subject;
+  subjectDiv.innerHTML = homeworkTime + " minutes";
   subjectDiv.className = "class-subject";
   background.appendChild(subjectDiv);
 
