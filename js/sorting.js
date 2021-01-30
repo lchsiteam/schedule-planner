@@ -5,7 +5,8 @@ var searchBox = document.getElementById("search-searchbox");
 searchBox.onkeyup = function(){sorting()};
 var apCheckbox = document.getElementById("search-ap-option");
 var hrCheckbox = document.getElementById("search-honors-option");
-var dropDown = document.getElementById("search-grade-selector");
+var gradeDropdown = document.getElementById("search-grade-selector");
+var subjectDropdown = document.getElementById("search-subject-selector");
 
 hrCheckbox.addEventListener('change', function () {
   if (hrCheckbox.checked) {
@@ -21,7 +22,10 @@ apCheckbox.addEventListener('change', function () {
   }
   sorting();
 });
-dropDown.addEventListener('change', function () {
+gradeDropdown.addEventListener('change', function () {
+  sorting();
+});
+subjectDropdown.addEventListener('change', function () {
   sorting();
 });
 
@@ -42,6 +46,7 @@ function sorting() {
   apCheck = document.getElementById("search-ap-option").checked;
   honorsCheck = document.getElementById("search-honors-option").checked;
   gradeCheck = document.getElementById("search-grade-selector").value;
+  subjectCheck = document.getElementById("search-subject-selector").value;
 
   classContainer = document.getElementById("all-classes");
   classes = classContainer.children;
@@ -62,15 +67,13 @@ function sorting() {
         subject = Object.subject;
         gradeLevel = Object.gradeLevel;
         ap = Object.ap;
-        console.log(apCheck)
         honors = Object.honors;
       }
     });
 
     if (name.toUpperCase().indexOf(input) > -1 ||
           subject.toUpperCase().indexOf(input) > -1 ||
-          gradeLevel == input > -1 ||
-          classID == input > -1
+          classID == input
         ) {
           classes[i].style.display = "";
         } else {
@@ -90,11 +93,16 @@ function sorting() {
       }
     }
 
-    // if (gradeCheck != 0) {
-    //   if (gradeCheck != gradeLevel) {
-    //     classes[i].style.display = "none";
-    //   }
-    // }
+    if (gradeCheck != 0) {
+      if (gradeCheck != gradeLevel) {
+        classes[i].style.display = "none";
+      }
+    }
+    if (subjectCheck != 0) {
+      if (subjectCheck != subject) {
+        classes[i].style.display = "none";
+      }
+    }
   }
 }
 
