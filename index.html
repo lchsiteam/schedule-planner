@@ -5,6 +5,8 @@
   <meta charset="utf-8" />
   <title>lc-testing</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <!-- Import font from google -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">
     WebFont.load({
@@ -17,6 +19,8 @@
       }
     });
   </script>
+
+  <!-- Add style.css -->
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -53,24 +57,24 @@
             title="Type in a class" />
           <div class="grade-selector">
             <select id="search-grade-selector" class="select-css">
-              <option value="0">Grade: All</option>
-              <option value="7">Grade: 7</option>
-              <option value="8">Grade: 8</option>
-              <option value="9">Grade: 9</option>
-              <option value="10">Grade: 10</option>
-              <option value="11">Grade: 11</option>
-              <option value="12">Grade: 12</option>
+              <option value="0">All</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
             </select>
           </div>
           <div class="subject-selector">
             <select id="search-subject-selector" class="select-css">
-              <option value="0">Subject: All</option>
-              <option value="math">Math</option>
-              <option value="english">English</option>
-              <option value="science">Science</option>
-              <option value="history">History</option>
-              <option value="forLang">Foreign Language</option>
-              <option value="elective">Elective</option>
+              <option value="0">All</option>
+                <option value="math">Math</option>
+                <option value="english">English</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="forLang">Foreign Lang</option>
+                <option value="art">Arts</option>
+                <option value="sport">Sports</option>
+                <option value="elective">Electives</option>
             </select>
           </div>
           <div class="ap-option">
@@ -92,7 +96,10 @@
       </div>
     </div>
   </div>
+
+  <!-- Import dragging library -->
   <script src="https://bevacqua.github.io/dragula/dist/dragula.js"></script>
+  <!-- Import other js -->
   <script src="js/calculations.js" type="text/javascript"></script>
   <script src="js/cms.js" type="text/javascript"></script>
   <script src="js/sorting.js" type="text/javascript"></script>
