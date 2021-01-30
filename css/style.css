@@ -321,18 +321,6 @@ input:checked + .slider:before {
     transform: translateX(40px);
 }
 
-.sleep-block {
-	width: 100%;
-}
-
-.school-block {
-	width: 100%;
-}
-
-.freetime-block {
-	width: 100%;
-}
-
 .class-container {
     position: relative;
     overflow: hidden;
@@ -351,12 +339,6 @@ input:checked + .slider:before {
 	width: 100%;
 	height: 100%;
 	transition: 300ms ease;
-}
-
-.class-container-trashed {
-	width: 0px;
-	height: 0px;
-	transition: 300ms, ease;
 }
 
 .class-desciption {
@@ -408,24 +390,28 @@ input:checked + .slider:before {
   height:0;
   background-color: #fc5858;
   overflow: hidden;
+  transition: 300ms, ease;
 }
 .homework {
   width: 100%;
   height: 0;
   background-color: #3cf0e1;
   overflow: hidden;
+  transition: 300ms, ease;
 }
 .free-time {
   width: 100%;
   height: 67%;
   background-color: #b3f065;
   overflow: hidden;
+  transition: 300ms, ease;
 }
 .sleep {
   width: 100%;
   height: 33%;
   background-color: #3d49fc;
   overflow: hidden;
+  transition: 300ms, ease;
 }
 .time {
   padding-top:3%
