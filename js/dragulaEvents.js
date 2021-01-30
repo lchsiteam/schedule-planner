@@ -13,6 +13,9 @@ dragula([$("all-classes"), $("selected-classes")], {
 	  if (el.parent == document.getElementById("selected-classes")) {
       return true;
 	  }
+	},
+	invalid: function (el) {
+		return el.className == "clear-classes";
 	}
 })
 

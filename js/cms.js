@@ -92,7 +92,6 @@ function showSelectedClasses(classes) {
 
 var trashCan = document.getElementById("clear-classes");
 trashCan.addEventListener("click", function () {
-  console.log(container.children);
   for (let index = container.children.length; index > 0; index--) {
     const item = container.children[index - 1];
     if (item.className == "class-container") {
