@@ -45,9 +45,6 @@ function calc () {
 
 function output (totalTime,numOfClasses) {
     var freeTime, school;
-    
-
-    console.log(numOfClasses)
 
     switch (numOfClasses) {
         case 0:
@@ -78,8 +75,6 @@ function output (totalTime,numOfClasses) {
             school = 480;
     }
 
-    console.log(school)
-
     homework = totalTime;
     sleep = 540;
     freeTime = 1440 - (school + homework + sleep);
@@ -99,10 +94,6 @@ function output (totalTime,numOfClasses) {
 
     document.getElementById('free-time').style.height =  (freeTime / 1440 * 100) + "%" ;
     formatHours(freeTime, 'free-text')
-    
-
-    
-    console.log(numOfClasses)
 }
 
 function formatHours (minutes, element) {
