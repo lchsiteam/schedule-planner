@@ -200,7 +200,7 @@
   {
       "className": "English Language Development 1",
       "classID": "EN2108",
-      "subject": "ELD",
+      "subject": "english",
       "classDescription": "Prerequisite: Level I placement on the ELPAC",
       "gradeLevel": 9,
       "ap": false,
@@ -211,7 +211,7 @@
   {
       "className": "English Language Development 2",
       "classID": "EN2109",
-      "subject": "ELD",
+      "subject": "english",
       "classDescription": "Prerequisite: Level II placement on the ELPAC",
       "gradeLevel": 10,
       "ap": false,
@@ -222,7 +222,7 @@
   {
       "className": "English Language Development 3",
       "classID": "EN2110",
-      "subject": "ELD",
+      "subject": "english",
       "classDescription": "Prerequisite: Level III placement on the ELPAC",
       "gradeLevel": 11,
       "ap": false,

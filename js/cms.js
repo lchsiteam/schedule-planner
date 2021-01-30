@@ -70,9 +70,6 @@ function addClassBox(item, selected) {
     case "sports":
       color = "#cea788";
       break;
-    case "ELD":
-      color = "#f1c948";
-      break;
     }
 
   var header = document.createElement("div");
