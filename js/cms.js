@@ -32,7 +32,6 @@ function getId(id) {
 
 function addClassBox(item, selected) {
   var name = item.className;
-  var color = item.color;
   var subject = item.subject;
   var description = item.classDescription;
   var gradeLevel = item.gradeLevel;
@@ -40,10 +39,32 @@ function addClassBox(item, selected) {
   var honors = item.honors;
   var classID = item.classID;
   var homeworkTime = item.dailyHomework;
+  var color;
 
   var background = document.createElement("div");
   background.className = "class-container";
   background.setAttribute("data-class-id", classID);
+
+  switch (subject) {
+    case "math":
+      color = "#ffffff";
+      break;
+    case "english":
+      color = "#ffffff";
+      break;
+    case "history":
+      color = "#ffffff";
+    case "science":
+      color = "#ffffff";
+    case "art":
+      color = "#ffffff";
+    case "forLang":
+      color = "#ffffff";
+    case "elective":
+      color = "#ffffff";
+    case "sports":
+      color = "#ffffff";
+    }
 
   var header = document.createElement("div");
   header.className = "class-name";
