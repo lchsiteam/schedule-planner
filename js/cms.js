@@ -47,23 +47,32 @@ function addClassBox(item, selected) {
 
   switch (subject) {
     case "math":
-      color = "#ffffff";
+      color = "#ace6ff";
       break;
     case "english":
-      color = "#ffffff";
+      color = "#ffe48c";
       break;
     case "history":
-      color = "#ffffff";
+      color = "#ff8686";
+      break;
     case "science":
-      color = "#ffffff";
+      color = "#b1ffaa";
+      break;
     case "art":
-      color = "#ffffff";
+      color = "#ffb6f4";
+      break;
     case "forLang":
-      color = "#ffffff";
+      color = "#ffc996";
+      break;
     case "elective":
-      color = "#ffffff";
+      color = "#c7c7c7";
+      break;
     case "sports":
-      color = "#ffffff";
+      color = "#cea788";
+      break;
+    case "ELD":
+      color = "#f1c948";
+      break;
     }
 
   var header = document.createElement("div");
