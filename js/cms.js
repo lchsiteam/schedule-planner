@@ -5,7 +5,7 @@ var allClasses = document.getElementById("all-classes");
 var classes;
 
 var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function () {
+xmlhttp.onreadystatechange = () => {
   if (this.readyState == 4 && this.status == 200) {
     classes = JSON.parse(this.responseText);
     classes.forEach(displayAllClass);
