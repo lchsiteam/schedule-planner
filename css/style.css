@@ -121,14 +121,15 @@ div {
 
 .class-times {
   width: 150px;
-  height: 600px;
+  height: 630px;
   margin-right: 10px;
   order: -1;
   border-radius: 50px;
   background-color: hsla(0, 0%, 100%, 0.4);
   overflow: hidden;
   text-align: center;
-  
+  border: black;
+  border-width: 4px;
 }
 
 .search-container {
