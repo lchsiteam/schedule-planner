@@ -52,11 +52,16 @@ div {
 
 .background {
 	position: absolute;
-	z-index: -1;
+	top: 25%;
+	z-index: 999;
 	width: 100vw;
 	height: 100vh;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#42b983), to(#2f9768));
-	background-image: linear-gradient(180deg, #42b983, #2f9768);
+	background-image: url(https://i.pinimg.com/originals/eb/05/cb/eb05cbcdeb70fd3cff116437c5c75f19.png);
+	background-position: 50%, 50%, 0px, 0px;
+	background-size: contain, auto;
+	background-repeat: no-repeat;
+	/* background-image: -webkit-gradient(linear, left top, left bottom, from(#42b983), to(#2f9768)); */
+	/* background-image: linear-gradient(180deg, #42b983, #2f9768); */
 }
 
 .app-container {
@@ -318,6 +323,14 @@ input:checked + .slider:before {
     background-color: #fff;
     margin-right: 5px;
     margin-bottom: 5px;
+	transition: 300ms ease;
+	user-select: none;
+}
+
+.class-container-large {
+	width: 100%;
+	height: 100%;
+	transition: 300ms ease;
 }
 
 .class-desciption {
@@ -406,10 +419,6 @@ input:checked + .slider:before {
   border: none;
   appearance: none;
   background-color: #ff000000;
-}
-
-.select-css::before {
-	content: "Grade :";
 }
 
 .select-css:focus {

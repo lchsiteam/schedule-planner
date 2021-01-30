@@ -1,6 +1,3 @@
-var document = new Document();
-
-/* search box & sorting*/
 var searchBox = document.getElementById("search-searchbox");
 searchBox.onkeyup = function(){sorting()};
 var apCheckbox = document.getElementById("search-ap-option");
