@@ -52,16 +52,11 @@ div {
 
 .background {
 	position: absolute;
-	top: 25%;
-	z-index: 999;
+	z-index: -1;
 	width: 100vw;
 	height: 100vh;
-	background-image: url(https://i.pinimg.com/originals/eb/05/cb/eb05cbcdeb70fd3cff116437c5c75f19.png);
-	background-position: 50%, 50%, 0px, 0px;
-	background-size: contain, auto;
-	background-repeat: no-repeat;
-	/* background-image: -webkit-gradient(linear, left top, left bottom, from(#42b983), to(#2f9768)); */
-	/* background-image: linear-gradient(180deg, #42b983, #2f9768); */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#42b983), to(#2f9768));
+	background-image: linear-gradient(180deg, #42b983, #2f9768);
 }
 
 .app-container {
