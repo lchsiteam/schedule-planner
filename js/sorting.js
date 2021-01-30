@@ -79,14 +79,10 @@ function sorting() {
     if (apCheck) {
       if (ap != true) {
         classes[i].style.display = "none";
-      } else {
-        classes[i].style.display = "";
       }
     } else if (honorsCheck) {
       if (honors != true) {
         classes[i].style.display = "none";
-      } else {
-        classes[i].style.display = "";
       }
     }
 

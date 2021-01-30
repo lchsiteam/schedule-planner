@@ -89,10 +89,3 @@ function showSelectedClasses(classes) {
     }
   }
 }
-
-var testingClassContainer = document.getElementsByClassName("class-container")[0];
-
-testingClassContainer.addEventListener('click', function () {
-  console.log("h");
-  testingClassContainer.classList.add("class-container-large");
-});

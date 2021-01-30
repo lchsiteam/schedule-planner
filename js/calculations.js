@@ -2,12 +2,16 @@ function calc () {
     var selectedClasses,numOfClasses;
 
     selectedClasses = localStorage.getItem("selectedClasses");
-    selectedClasses = selectedClasses.split(',')
+    if (selectedClasses == null) {
+        selectedClasses = [];
+    } else {
+        selectedClasses = selectedClasses.split(',');
+    }
 
     if (selectedClasses[0] == "") {
         numOfClasses = 0
     } else {
-        numOfClasses = selectedClasses.length
+        numOfClasses = selectedClasses.length;
     }
 
     var classes;
@@ -16,8 +20,8 @@ function calc () {
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             classes = JSON.parse(this.responseText);
-            totalTime = calcTime(classes,selectedClasses)
-            output (totalTime,numOfClasses)
+            totalTime = calcTime(classes,selectedClasses);
+            output (totalTime,numOfClasses);
         }
     };
     xmlhttp.open("GET", "documents/defaultClasses.json", true);
@@ -38,7 +42,7 @@ function calc () {
 
         }
 
-        return totalTime
+        return totalTime;
     }
 }
 
