@@ -339,6 +339,16 @@ input:checked + .slider:before {
   overflow: hidden;
 }
 
+.class-container:hover > .class-desciption {
+  height: auto;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.class-container:hover {
+  height: fit-content;
+}
+
 .class-name {
   display: flex;
   justify-content: center;
