@@ -90,7 +90,11 @@ function addClassBox(item, selected) {
   background.appendChild(classCode);
 
   var subjectDiv = document.createElement("div");
-  subjectDiv.innerHTML = homeworkTime + " minutes";
+  if (homeworkTime == -1) {
+    subjectDiv.innerHTML = "Homework Unknown";
+  } else {
+    subjectDiv.innerHTML = homeworkTime + " minutes";
+  }
   subjectDiv.className = "class-subject";
   background.appendChild(subjectDiv);
 

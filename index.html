@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>lc-testing</title>
+  <title>Lc Planner</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   <!-- Import font from google -->
@@ -25,77 +27,87 @@
 </head>
 
 <body class="body">
-  <div class="background"></div>
-  <div class="app-container">
-    <div class="center-elements">
-      <div class="class-times">
-        <div class="class-times-inner-container">
-          <div class="school" id="school">
-            <div class="time">School</div>
-            <div id="school-text"></div>
+  <div class="main-app">
+    <div class="background"></div>
+    <div class="app-container">
+      <div class="elements-container">
+        <div class="center-elements">
+          <div class="class-times">
+            <div class="class-times-inner-container">
+              <div class="school" id="school">
+                <div class="time">School</div>
+                <div id="school-text"></div>
+              </div>
+              <div class="homework" id="homework">
+                <div class="time">Homework</div>
+                <div id="homework-text"></div>
+              </div>
+              <div class="free-time" id="free-time">
+                <div class="time">Free Time</div>
+                <div id="free-text"></div>
+              </div>
+              <div class="sleep" id="sleep">
+                <div class="time">Sleep</div>
+                <div id="sleep-text"></div>
+              </div>
+            </div>
           </div>
-          <div class="homework" id="homework">
-            <div class="time">Homework</div>
-            <div id="homework-text"></div>
+          <div class="selected-classes" id="selected-classes">
+            <div class="clear-classes" id="clear-classes"></div>
           </div>
-          <div class="free-time" id="free-time">
-            <div class="time">Free Time</div>
-            <div id="free-text"></div>
-          </div>
-          <div class="sleep" id="sleep">
-            <div class="time">Sleep</div>
-            <div id="sleep-text"></div>
+          <div class="search-container">
+            <div class="search-options">
+              <input type="text" class="search-searchbox" id="search-searchbox" placeholder="Search for classes ..."
+                title="Type in a class" />
+              <div class="grade-selector">
+                <select id="search-grade-selector" class="select-css">
+                  <option value="0">All</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <div class="subject-selector">
+                <select id="search-subject-selector" class="select-css">
+                  <option value="0">All</option>
+                    <option value="math">Math</option>
+                    <option value="english">English</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                    <option value="forLang">Foreign Lang</option>
+                    <option value="art">Arts</option>
+                    <option value="sport">Sports</option>
+                    <option value="elective">Electives</option>
+                </select>
+              </div>
+              <div class="ap-option">
+                <label class="switch">
+                  <input type="checkbox" id="search-ap-option">
+                  <span class="slider">AP AP</span>
+                </label>
+              </div>
+              <div class="honors-option">
+                <label class="switch">
+                  <input type="checkbox" id="search-honors-option">
+                  <span class="slider">
+                    <div class="slider-text">HR HR</div>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="all-classes dragula-container" id="all-classes"></div>
           </div>
         </div>
-      </div>
-      <div class="selected-classes" id="selected-classes">
-        <div class="clear-classes" id="clear-classes"></div>
-      </div>
-      <div class="search-container">
-        <div class="search-options">
-          <input type="text" class="search-searchbox" id="search-searchbox" placeholder="Search for classes ..."
-            title="Type in a class" />
-          <div class="grade-selector">
-            <select id="search-grade-selector" class="select-css">
-              <option value="0">All</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-          </div>
-          <div class="subject-selector">
-            <select id="search-subject-selector" class="select-css">
-              <option value="0">All</option>
-                <option value="math">Math</option>
-                <option value="english">English</option>
-                <option value="science">Science</option>
-                <option value="history">History</option>
-                <option value="forLang">Foreign Lang</option>
-                <option value="art">Arts</option>
-                <option value="sport">Sports</option>
-                <option value="elective">Electives</option>
-            </select>
-          </div>
-          <div class="ap-option">
-            <label class="switch">
-              <input type="checkbox" id="search-ap-option">
-              <span class="slider">AP AP</span>
-            </label>
-          </div>
-          <div class="honors-option">
-            <label class="switch">
-              <input type="checkbox" id="search-honors-option">
-              <span class="slider">
-                <div class="slider-text">HR HR</div>
-              </span>
-            </label>
-          </div>
+        <div class="bottom-text">
+          <br>
+          Bugs? Feature Suggestions? Email us at  <a data-v-b9efd7bc="" href="mailto:team@lciteam.club" class="a">team@lciteam.club</a>.  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Also try LCHS Go, our bell schedule app! <a href="https://go.lciteam.club" target="_blank">go.lciteam.club</a>
         </div>
-        <div class="all-classes dragula-container" id="all-classes"></div>
       </div>
     </div>
   </div>
+
+  
 
   <!-- Import dragging library -->
   <script src="https://bevacqua.github.io/dragula/dist/dragula.js"></script>

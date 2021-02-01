@@ -1,24 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@700&display=swap');
 
 .body {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	overflow: hidden;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	font-family: 'Niramit', sans-serif;
+  display:inline-block;
+  font-family: 'Niramit', sans-serif;
 	font-size: 14px;
 	line-height: 17px;
   font-weight: 600;
+  margin: 0rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: #2f9768;
 }
+
 
 div {
     box-sizing: border-box;
@@ -81,6 +74,10 @@ div {
 	align-items: center;
 }
 
+.elements-container {
+  display:inline-block;
+}
+
 .center-elements {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -90,6 +87,10 @@ div {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .selected-classes {
@@ -342,20 +343,22 @@ input:checked + .slider:before {
 }
 
 .class-desciption {
-  line-height: 13px;
-  font-size: 12px;
-  height: 90px;
-  padding: 4px;
-  padding-top: 5px;
-    padding-left: 5px;
-    padding-bottom: 22px;
-  overflow: hidden;
+	line-height: 13px;
+	font-size: 12px;
+	height: 90px;
+	padding: 4px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 22px;
+	overflow: hidden;
+	transition: 300ms ease;
 }
 
 .class-container:hover > .class-desciption {
   height: auto;
   font-size: 15px;
   line-height: 17px;
+  transition: 300ms ease;
 }
 
 .class-container:hover {
@@ -443,6 +446,10 @@ input:checked + .slider:before {
   background-color: #ff000000;
 }
 
+.select-css::before {
+	content: "Grade: ";
+}
+
 .select-css:focus {
 	border: none;
   color: #222; 
@@ -453,6 +460,6 @@ input:checked + .slider:before {
   font-weight:normal;
 }
 
-body {
-  margin: 0rem;
+.bottom-text {
+  display: inline;
 }
