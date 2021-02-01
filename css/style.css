@@ -49,7 +49,7 @@ div {
 	width: 100vw;
 	height: 100vh;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#42b983), to(#2f9768));
-	background-image: linear-gradient(180deg, #b5cac0, #b5cac0);
+	background-image: linear-gradient(180deg, #adadad, #adadad);
 }
 
 .app-container {
