@@ -35,13 +35,12 @@ function calc () {
             for (let selectedIndex = 0; selectedIndex < selectedClasses.length; selectedIndex++) {
                 const classCheck = selectedClasses[selectedIndex];
                 if (element.classID == classCheck) {
-                    totalTime += element.dailyHomework
-                }
-                
+                    if (element.dailyHomework != -1) {
+                        totalTime += element.dailyHomework;
+                    }
+                }  
             }
-
         }
-
         return totalTime;
     }
 }
