@@ -85,10 +85,11 @@ function sorting() {
         classes[i].style.display = "none";
       }
     }
-
+    
     if(gradeCheck != 0) {
-      if(gradeCheck != gradeLevel) {
+      if(!(gradeLevel.indexOf(parseInt(gradeCheck)) > -1)) {
         classes[i].style.display = "none";
+        console.log(name);
       }
     }
     if(subjectCheck != 0) {

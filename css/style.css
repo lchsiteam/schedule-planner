@@ -17,7 +17,8 @@
 	font-family: 'Niramit', sans-serif;
 	font-size: 14px;
 	line-height: 17px;
-  font-weight: 600;
+  	font-weight: 600;
+  	margin: 0rem;
 }
 
 div {
@@ -342,20 +343,22 @@ input:checked + .slider:before {
 }
 
 .class-desciption {
-  line-height: 13px;
-  font-size: 12px;
-  height: 90px;
-  padding: 4px;
-  padding-top: 5px;
-    padding-left: 5px;
-    padding-bottom: 22px;
-  overflow: hidden;
+	line-height: 13px;
+	font-size: 12px;
+	height: 90px;
+	padding: 4px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 22px;
+	overflow: hidden;
+	transition: 300ms ease;
 }
 
 .class-container:hover > .class-desciption {
   height: auto;
   font-size: 15px;
   line-height: 17px;
+  transition: 300ms ease;
 }
 
 .class-container:hover {
@@ -443,6 +446,10 @@ input:checked + .slider:before {
   background-color: #ff000000;
 }
 
+.select-css::before {
+	content: "Grade: ";
+}
+
 .select-css:focus {
 	border: none;
   color: #222; 
@@ -451,8 +458,4 @@ input:checked + .slider:before {
 
 .select-css option {
   font-weight:normal;
-}
-
-body {
-  margin: 0rem;
 }
