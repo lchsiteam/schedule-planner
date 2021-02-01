@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@700&display=swap');
 
 .body {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	overflow: hidden;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	font-family: 'Niramit', sans-serif;
+  display:inline-block;
+  font-family: 'Niramit', sans-serif;
 	font-size: 14px;
 	line-height: 17px;
-  	font-weight: 600;
-  	margin: 0rem;
+  font-weight: 600;
+  margin: 0rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: #2f9768;
 }
+
 
 div {
     box-sizing: border-box;
@@ -82,6 +74,10 @@ div {
 	align-items: center;
 }
 
+.elements-container {
+  display:inline-block;
+}
+
 .center-elements {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -91,6 +87,10 @@ div {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .selected-classes {
@@ -458,4 +458,8 @@ input:checked + .slider:before {
 
 .select-css option {
   font-weight:normal;
+}
+
+.bottom-text {
+  display: inline;
 }
