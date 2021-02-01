@@ -56,7 +56,7 @@ div {
 	width: 100vw;
 	height: 100vh;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#42b983), to(#2f9768));
-	background-image: linear-gradient(180deg, #42b983, #2f9768);
+	background-image: linear-gradient(180deg, #b5cac0, #b5cac0);
 }
 
 .app-container {
@@ -309,7 +309,7 @@ div {
     width: 40px;
     left: 0px;
     bottom: 0px;
-    background-color: #ff6868;
+    background-color: #bbbbbb;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -398,28 +398,28 @@ input:checked + .slider:before {
 .school {
   width: 100%;
   height:0;
-  background-color: #fc5858;
+  background-color: #ffb7b2;
   overflow: hidden;
   transition: 300ms, ease;
 }
 .homework {
   width: 100%;
   height: 0;
-  background-color: #3cf0e1;
+  background-color: #84d6cf;
   overflow: hidden;
   transition: 300ms, ease;
 }
 .free-time {
   width: 100%;
   height: 67%;
-  background-color: #b3f065;
+  background-color: #e2f0cb;
   overflow: hidden;
   transition: 300ms, ease;
 }
 .sleep {
   width: 100%;
   height: 33%;
-  background-color: #3d49fc;
+  background-color: #c7ceea;
   overflow: hidden;
   transition: 300ms, ease;
 }
