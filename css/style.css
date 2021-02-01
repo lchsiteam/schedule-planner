@@ -48,8 +48,8 @@ div {
 	z-index: -1;
 	width: 100vw;
 	height: 100vh;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#42b983), to(#2f9768));
-	background-image: linear-gradient(180deg, #adadad, #adadad);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#00dbd5), to(#6be1ff));
+	background-image: linear-gradient(180deg, #00dbd5, #6be1ff);
 }
 
 .app-container {
