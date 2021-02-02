@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@700&display=swap');
 
+@font-face {
+	font-family: "LcFont";
+	src: url("/documents/Goudy_Old_Style_MT_W01.ttf");
+}
+
 .body {
   display:inline-block;
   font-family: 'Niramit', sans-serif;
@@ -65,8 +70,28 @@ div {
   display:inline-block;
 }
 
+.top-text {
+	display: inline-block;
+}
+
+.spartan-logo {
+	height: 70px;
+	padding-right:20px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
 .title-text {
-	font-size: 80px;
+	font-size: 50px;
+	font-family: 'LcFont';
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.years-text {
+	font-size: 50px;
+	font-family: 'LcFont';
+	display: inline-block;
 }
 
 .center-elements {
