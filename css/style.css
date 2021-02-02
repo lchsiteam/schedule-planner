@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@700&display=swap');
 
+@font-face {
+	font-family: "LcFont";
+	src: url("/documents/Goudy_Old_Style_MT_W01.ttf");
+}
+
 .body {
   display:inline-block;
   font-family: 'Niramit', sans-serif;
@@ -48,34 +53,45 @@ div {
 	z-index: -1;
 	width: 100vw;
 	height: 100vh;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#42b983), to(#2f9768));
-	background-image: linear-gradient(180deg, #42b983, #2f9768);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#00dbd5), to(#6be1ff));
+	background-image: linear-gradient(180deg, #00dbd5, #6be1ff);
 }
 
 .app-container {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	width: 100vw;
 	height: 100vh;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
+	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
 .elements-container {
   display:inline-block;
+}
+
+.top-text {
+	display: inline-block;
+}
+
+.spartan-logo {
+	height: 70px;
+	padding-right:20px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.title-text {
+	font-size: 50px;
+	font-family: 'LcFont';
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.years-text {
+	font-size: 50px;
+	font-family: 'LcFont';
+	display: inline-block;
 }
 
 .center-elements {
@@ -99,8 +115,7 @@ div {
 	margin-right: 10px;
 	margin-left: 10px;
 	padding-top: 10px;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-left: 5px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: hsla(0, 0%, 100%, 0.5);
@@ -172,24 +187,13 @@ div {
 }
 
 .search-options {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	height: 110px;
 	margin-bottom: 10px;
 	padding: 10px;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	-ms-flex-pack: start;
 	justify-content: flex-start;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-box-align: start;
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
 	align-items: flex-start;
 	border-style: solid;
 	border-width: 1px;
@@ -202,7 +206,7 @@ div {
 	width: 100%;
 	height: 510px;
 	padding-top: 10px;
-	padding-left: 10px;
+	padding-left: 5px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: hsla(0, 0%, 100%, 0.5);
@@ -310,7 +314,7 @@ div {
     width: 40px;
     left: 0px;
     bottom: 0px;
-    background-color: #ff6868;
+    background-color: #bbbbbb;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -325,13 +329,13 @@ input:checked + .slider:before {
 .class-container {
     position: relative;
     overflow: hidden;
-    width: 197px;
+    width: 200px;
     min-height: 150px;
     height: 150px;
     border-radius: 10px;
     background-color: #fff;
-    margin-right: 5px;
-    margin-bottom: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
 	transition: 300ms ease;
 	user-select: none;
 }
@@ -401,28 +405,28 @@ input:checked + .slider:before {
 .school {
   width: 100%;
   height:0;
-  background-color: #fc5858;
+  background-color: #ffc153;
   overflow: hidden;
   transition: 300ms, ease;
 }
 .homework {
   width: 100%;
   height: 0;
-  background-color: #3cf0e1;
+  background-color: #78d79d;
   overflow: hidden;
   transition: 300ms, ease;
 }
 .free-time {
   width: 100%;
   height: 67%;
-  background-color: #b3f065;
+  background-color: #d7ff95;
   overflow: hidden;
   transition: 300ms, ease;
 }
 .sleep {
   width: 100%;
   height: 33%;
-  background-color: #3d49fc;
+  background-color: #c9afff;
   overflow: hidden;
   transition: 300ms, ease;
 }
@@ -444,10 +448,6 @@ input:checked + .slider:before {
   border: none;
   appearance: none;
   background-color: #ff000000;
-}
-
-.select-css::before {
-	content: "Grade: ";
 }
 
 .select-css:focus {

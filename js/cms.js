@@ -45,7 +45,7 @@ function addClassBox(item, selected) {
   background.className = "class-container";
   background.setAttribute("data-class-id", classID);
 
-  switch (subject) {
+  switch (subject[0]) {
     case "math":
       color = "#ace6ff";
       break;
