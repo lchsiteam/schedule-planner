@@ -92,7 +92,7 @@ function sorting() {
       }
     }
     if(subjectCheck != 0) {
-      if(subjectCheck != subject) {
+      if(!(subject.indexOf(subjectCheck) > -1)) {
         classes[i].style.display = "none";
       }
     }

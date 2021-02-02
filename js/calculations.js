@@ -8,11 +8,7 @@ function calc () {
         selectedClasses = selectedClasses.split(',');
     }
 
-    if (selectedClasses[0] == "") {
-        numOfClasses = 0
-    } else {
-        numOfClasses = selectedClasses.length;
-    }
+    numOfClasses = selectedClasses.length - 1;
 
     var classes;
 
