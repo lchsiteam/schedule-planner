@@ -65,17 +65,25 @@ function sorting() {
         gradeLevel = Object.gradeLevel;
         ap = Object.ap;
         honors = Object.honors;
+        classID = Object.classID
       }
     });
 
     if(name.toUpperCase().indexOf(input) > -1 ||
-          subject.toUpperCase().indexOf(input) > -1 ||
-          classID == input
-        ) {
-          classes[i].style.display = "";
-        } else {
-          classes[i].style.display = "none";
-        }
+      classID.indexOf(input) > -1
+        ) 
+      {
+        classes[i].style.display = "";
+      } else {
+        classes[i].style.display = "none";
+      }
+
+    for (aSubject in subject) {
+      if (subject[aSubject].toUpperCase().indexOf(input) > -1) {
+        classes[i].style.display = "";
+      }
+    }
+
     if(apCheck) {
       if(ap != true) {
         classes[i].style.display = "none";
