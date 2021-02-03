@@ -65,14 +65,12 @@ function sorting() {
         gradeLevel = Object.gradeLevel;
         ap = Object.ap;
         honors = Object.honors;
+        classID = Object.classID
       }
     });
 
-    console.log(subject)
-    console.log(input)
-
     if(name.toUpperCase().indexOf(input) > -1 ||
-      input.indexOf(classID) > -1
+      classID.indexOf(input) > -1
         ) 
       {
         classes[i].style.display = "";
