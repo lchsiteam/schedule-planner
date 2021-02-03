@@ -68,14 +68,24 @@ function sorting() {
       }
     });
 
+    console.log(subject)
+    console.log(input)
+
     if(name.toUpperCase().indexOf(input) > -1 ||
-          subject.toUpperCase().indexOf(input) > -1 ||
-          classID == input
-        ) {
-          classes[i].style.display = "";
-        } else {
-          classes[i].style.display = "none";
-        }
+      input.indexOf(classID) > -1
+        ) 
+      {
+        classes[i].style.display = "";
+      } else {
+        classes[i].style.display = "none";
+      }
+
+    for (aSubject in subject) {
+      if (subject[aSubject].toUpperCase().indexOf(input) > -1) {
+        classes[i].style.display = "";
+      }
+    }
+
     if(apCheck) {
       if(ap != true) {
         classes[i].style.display = "none";
