@@ -132,3 +132,11 @@ trashCan.addEventListener("click", function () {
     }
   }
 });
+
+setInterval(changeColor, 20000);
+
+function changeColor() {
+  var backgroundDiv = document.getElementById("background");
+  var colors = ["#caf7f6", "#89cbdc","#d3f7ca","#8edc89","#f7ddca","#dcbb89","#f7cad6","#dc89bb","#d5caf7","#a989dc"];
+  backgroundDiv.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+}
