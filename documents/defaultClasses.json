@@ -533,7 +533,7 @@
   {
       "className": "Psychology",
       "classID": "EL9023",
-      "subject": ["history"],
+      "subject": ["history","elective"],
       "classDescription": "None. Open to students in 11 and 12 only.",
       "gradeLevel": [12],
       "ap": false,
@@ -544,7 +544,7 @@
   {
       "className": "AP Psychology",
       "classID": "EL9020",
-      "subject": ["history"],
+      "subject": ["history","elective"],
       "classDescription": "Open to students in grade 12 only. Some experience in an honors or AP level science or history course recommended.",
       "gradeLevel": [11,12],
       "ap": true,
