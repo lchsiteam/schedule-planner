@@ -52,8 +52,7 @@ div {
 	z-index: -1;
 	width: 100vw;
 	height: 100vh;
-	background-color: thistle;
-	/* background-image: linear-gradient(180deg, #f7cad6, #dc89bb); */
+	background-image: linear-gradient(180deg, #00dbd5, #6be1ff);
 	transition: 3000ms ease;
 	transition-property: color;
 }
