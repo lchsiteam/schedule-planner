@@ -66,11 +66,33 @@
   },
 
   {
+      "className": "LC Math 4 P",
+      "classID": "MA5036",
+      "subject": ["math"],
+      "classDescription": "Prerequisite: its equivalent. Grade of B or higher in LC Math 3 or",
+      "gradeLevel": [11, 12],
+      "ap": false,
+      "honors": false,
+      "dailyHomework": 45
+  },
+
+  {
+      "className": "AP Pre-Calculus",
+      "classID": "MA5017",
+      "subject": ["math"],
+      "classDescription": "Prerequisite: Grade of B or higher in LC Math 3.",
+      "gradeLevel": [12],
+      "ap": true,
+      "honors": false,
+      "dailyHomework": -1
+  },
+
+  {
       "className": "AP Calculus AB",
       "classID": "MA5013",
       "subject": ["math"],
       "classDescription": "Prerequisite: Grade of B or higher in LC Math 3 Adv. or Grade of B or higher in LC Math 4 or pre-calculus equivalent and teacher recommendation.",
-      "gradeLevel": [12],
+      "gradeLevel": [11, 12],
       "ap": true,
       "honors": false,
       "dailyHomework": 45
@@ -81,7 +103,7 @@
       "classID": "MA5014",
       "subject": ["math"],
       "classDescription": "Prerequisite: Grade of A in LC Math 3 Advanced and teacher recommendation.",
-      "gradeLevel": [12],
+      "gradeLevel": [11, 12],
       "ap": true,
       "honors": false,
       "dailyHomework": 45
@@ -92,21 +114,10 @@
       "classID": "MA5015",
       "subject": ["math"],
       "classDescription": "Prerequisite: Recommended Grade B or higher in LC Math 3, or grade of C+ or higher in LC Math 3 Advanced, and teacher recommendation.​ ​AP Statistics may be taken concurrently with AP Calculus AB or BC, AP Computer Science A, or Discrete Math. ​ ​Concurrent enrollment in LC Math 3 Advanced is Not Allowed.",
-      "gradeLevel": [12],
+      "gradeLevel": [11, 12],
       "ap": true,
       "honors": false,
       "dailyHomework": 30
-  },
-
-  {
-      "className": "LC Math 4 P",
-      "classID": "MA5036",
-      "subject": ["math"],
-      "classDescription": "Prerequisite: its equivalent. Grade of B or higher in LC Math 3 or",
-      "gradeLevel": [12],
-      "ap": false,
-      "honors": false,
-      "dailyHomework": 45
   },
 
   {
@@ -114,7 +125,7 @@
       "classID": "MA5672",
       "subject": ["math"],
       "classDescription": "Prerequisite: Grade of C or higher in LC Math 3 or its equivalent.",
-      "gradeLevel": [12],
+      "gradeLevel": [11, 12],
       "ap": false,
       "honors": false,
       "dailyHomework": 30
@@ -125,7 +136,7 @@
       "classID": "MA5620",
       "subject": ["math"],
       "classDescription": "Prerequisite: Grade of B or higher in AP Calculus BC, Grade of 5 on the BC Calculus AP Exam and teacher recommendation.",
-      "gradeLevel": [12],
+      "gradeLevel": [10, 11, 12],
       "ap": true,
       "honors": false,
       "dailyHomework": 60
@@ -136,7 +147,7 @@
       "classID": "MA5625",
       "subject": ["math"],
       "classDescription": "Prerequisite: Grade of B or higher in PCC Multivariable Calculus and teacher recommendation.",
-      "gradeLevel": [12],
+      "gradeLevel": [10, 11, 12],
       "ap": true,
       "honors": false,
       "dailyHomework": 60
@@ -398,11 +409,22 @@
       "className": "AP Physics 1 HP",
       "classID": "SC8043",
       "subject": ["science"],
-      "classDescription": "Prerequisite: Recommended Grade of B or higher in Physics 1 Advanced or Grade of “A” in Physics 1P. ​Concurrent enrollment in LC Math 3 Advanced or LC Math 3.",
+      "classDescription": "Prerequisite: Recommended Grade of “B” in Physics Advanced or “A” in Physics and concurrent enrollment in Math 2 Advanced or higher math class or its equivalent",
       "gradeLevel": [11,12],
       "ap": true,
       "honors": false,
       "dailyHomework": 60
+  },
+
+  {
+      "className": "AP Physics 2 HP",
+      "classID": "SC8037",
+      "subject": ["science"],
+      "classDescription": "Prerequisite: Recommended Grade of “B” or higher in Physics Advanced or Grade of “A” in Physics CP. Concurrent enrollment in LC Math 3 Advanced or LC Math 3.",
+      "gradeLevel": [11,12],
+      "ap": true,
+      "honors": false,
+      "dailyHomework": -1
   },
 
   {
@@ -425,17 +447,6 @@
       "ap": false,
       "honors": false,
       "dailyHomework": 30
-  },
-
-  {
-      "className": "Oceanography P",
-      "classID": "SC8035",
-      "subject": ["science"],
-      "classDescription": "Prerequisite: Completion of PLTW 1 P with grade of C or better.",
-      "gradeLevel": [11],
-      "ap": false,
-      "honors": false,
-      "dailyHomework": 0
   },
 
 
@@ -535,7 +546,7 @@
       "classID": "EL9023",
       "subject": ["history"],
       "classDescription": "None. Open to students in 11 and 12 only.",
-      "gradeLevel": [12],
+      "gradeLevel": [11, 12],
       "ap": false,
       "honors": false,
       "dailyHomework": 10
@@ -546,21 +557,10 @@
       "classID": "EL9020",
       "subject": ["history"],
       "classDescription": "Open to students in grade 12 only. Some experience in an honors or AP level science or history course recommended.",
-      "gradeLevel": [11,12],
-      "ap": true,
-      "honors": false,
-      "dailyHomework": 29
-  },
-
-  {
-      "className": "AP Seminar",
-      "classID": "EL9111",
-      "subject": ["history"],
-      "classDescription": "Successful completion of an AP English or Social Science class with a grade of a B or higher. For students in the class of 2021 and beyond, desire to enroll in the second course in this sequence, AP Research in academic year 2021-22.",
       "gradeLevel": [12],
       "ap": true,
       "honors": false,
-      "dailyHomework": 60
+      "dailyHomework": 29
   },
 
 
@@ -590,7 +590,7 @@
         "classID": "FA4001",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: None",
-        "gradeLevel": [9],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 30
@@ -601,7 +601,7 @@
         "classID": "FA4003",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of C or higher in French 1 P",
-        "gradeLevel": [10],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 30
@@ -612,7 +612,7 @@
         "classID": "FA4005",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of C or higher in French 2 P",
-        "gradeLevel": [11],
+        "gradeLevel": [10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 30
@@ -623,7 +623,7 @@
         "classID": "FA4006",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of B or higher in French 2 P and teacher recommendation.",
-        "gradeLevel": [11],
+        "gradeLevel": [10, 11, 12],
         "ap": false,
         "honors": true,
         "dailyHomework": 45
@@ -634,7 +634,7 @@
         "classID": "FA4008",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of B or higher in French 3 HP or a grade of A in French 3 P and teacher recommendation.",
-        "gradeLevel": [12],
+        "gradeLevel": [11, 12],
         "ap": false,
         "honors": true,
         "dailyHomework": 45
@@ -667,7 +667,7 @@
         "classID": "FA4015",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of C or higher in German 2 P",
-        "gradeLevel": [11],
+        "gradeLevel": [10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 20
@@ -678,7 +678,7 @@
         "classID": "FA4016",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of a B or higher in German 2 P and teacher recommendation",
-        "gradeLevel": [11],
+        "gradeLevel": [10, 11, 12],
         "ap": false,
         "honors": true,
         "dailyHomework": 35
@@ -689,7 +689,7 @@
         "classID": "FA4017",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of B or higher in German 3 P or 3 HP and teacher recommendation",
-        "gradeLevel": [12],
+        "gradeLevel": [11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 30
@@ -700,7 +700,7 @@
         "classID": "FA4018",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of B or higher in German 3 P or 3 HP and teacher recommendation",
-        "gradeLevel": [12],
+        "gradeLevel": [11, 12],
         "ap": false,
         "honors": true,
         "dailyHomework": 35
@@ -711,7 +711,7 @@
         "classID": "FA4040",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: None",
-        "gradeLevel": [9],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 30
@@ -722,7 +722,7 @@
         "classID": "FA4042",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of C or better in Korean 1 P",
-        "gradeLevel": [10],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 30
@@ -733,7 +733,7 @@
         "classID": "FA4041",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of C or better in Korean 2 P",
-        "gradeLevel": [11],
+        "gradeLevel": [10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 30
@@ -744,7 +744,7 @@
         "classID": "FA4046",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of B or higher in Korean 3 P and teacher recommendation",
-        "gradeLevel": [12],
+        "gradeLevel": [11, 12],
         "ap": false,
         "honors": true,
         "dailyHomework": 30
@@ -755,7 +755,7 @@
         "classID": "FA4031",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: None",
-        "gradeLevel": [9],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 20
@@ -766,7 +766,7 @@
         "classID": "FA4033",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Spanish 2 P UC/CSU Approved 10 units (2 semesters) Grade of C or higher in Spanish 1 P",
-        "gradeLevel": [10],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 20
@@ -777,7 +777,7 @@
         "classID": "FA4035",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Spanish 3 P UC/CSU Approved 10 units (2 semesters) Grade of C or higher in Spanish 2 P",
-        "gradeLevel": [11],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 60
@@ -788,7 +788,7 @@
         "classID": "FA4036",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of B or higher in Spanish 2 P and teacher recommendation",
-        "gradeLevel": [11],
+        "gradeLevel": [10, 11, 12],
         "ap": false,
         "honors": true,
         "dailyHomework": 60
@@ -799,7 +799,7 @@
         "classID": "FA4037",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of B or higher in Spanish 3P/ 3HP",
-        "gradeLevel": [12],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": false,
         "honors": false,
         "dailyHomework": 60
@@ -810,7 +810,7 @@
         "classID": "FA4038",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Grade of A in Spanish 3 P and teacher recommendation or Grade of B or higher in Honors Spanish 3 P and teacher recommendation.",
-        "gradeLevel": [12],
+        "gradeLevel": [9, 10, 11, 12],
         "ap": true,
         "honors": false,
         "dailyHomework": 60
@@ -821,7 +821,7 @@
         "classID": "FA0631",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Enrollment and participation is based upon approval of LCHS and PCC administration and faculty.",
-        "gradeLevel": [9,10],
+        "gradeLevel": [9,10,11,12],
         "ap": false,
         "honors": false,
         "dailyHomework": 40
@@ -832,7 +832,7 @@
         "classID": "FA0632",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Enrollment and participation is based upon approval of LCHS and PCC administration and faculty.",
-        "gradeLevel": [10,11],
+        "gradeLevel": [9,10,11,12],
         "ap": false,
         "honors": false,
         "dailyHomework": 40
@@ -843,10 +843,21 @@
         "classID": "FA0633",
         "subject": ["forLang"],
         "classDescription": "Prerequisite: Enrollment and participation is based upon approval of LCHS and PCC administration and faculty.",
-        "gradeLevel": [11,12],
+        "gradeLevel": [9,10,11,12],
         "ap": false,
         "honors": false,
         "dailyHomework": 40
+    },
+
+    {
+        "className": "PCC Mandarin - Level 4",
+        "classID": "FA0634",
+        "subject": ["forLang"],
+        "classDescription": "Prerequisite: Enrollment and participation is based upon approval of LCHS and PCC administration and faculty.",
+        "gradeLevel": [9,10,11,12],
+        "ap": false,
+        "honors": false,
+        "dailyHomework": -1
     },
 
     {
@@ -854,7 +865,7 @@
         "classID": "FA3101",
         "subject": ["art"],
         "classDescription": "Prerequisite: None",
-        "gradeLevel": [9,10,11],
+        "gradeLevel": [9,10,11,12],
         "ap": false,
         "honors": false,
         "dailyHomework": 30
@@ -865,7 +876,7 @@
         "classID": "FA3102",
         "subject": ["art"],
         "classDescription": "Prerequisite: Grade of B or higher and an S or higher in citizenship in both semesters of Art 1. A recommendation of the teacher or a portfolio and passing a basic art examination will also be required.",
-        "gradeLevel": [10,11],
+        "gradeLevel": [10,11,12],
         "ap": false,
         "honors": false,
         "dailyHomework": 0
@@ -887,7 +898,7 @@
         "classID": "FA3004",
         "subject": ["art"],
         "classDescription": "Prerequisite: \"B\" and \"S\" or better in both semesters of Art 3 and/or Advanced Ceramics.",
-        "gradeLevel": [12],
+        "gradeLevel": [11,12],
         "ap": false,
         "honors": false,
         "dailyHomework": 0
@@ -926,28 +937,12 @@
 
 
 
-
-
-
-
-    {
-      "className": "AP Studio Art: 2D Design HP",
-      "classID": "FA3029",
-      "subject": ["art"],
-      "classDescription": "Prerequisite: Grade of B or higher in Commercial Photography 1.",
-      "gradeLevel": [10,11,12],
-      "ap": false,
-      "honors": false,
-      "dailyHomework": 60
-    },
-
-
     {
       "className": "Advanced Band P",
       "classID": "FA3011",
       "subject": ["art"],
       "classDescription": "Prerequisite: Assessment of musical ability and teacher review",
-      "gradeLevel": [10,11,12],
+      "gradeLevel": [9,10,11,12],
       "ap": false,
       "honors": false,
       "dailyHomework": 0
@@ -958,7 +953,7 @@
       "classID": "FA3014",
       "subject": ["art"],
       "classDescription": "Prerequisite: Assessment of musical ability and teacher review",
-      "gradeLevel": [10,11,12],
+      "gradeLevel": [9,10,11,12],
       "ap": false,
       "honors": false,
       "dailyHomework": 0
@@ -975,8 +970,8 @@
       "className": "AP Music Theory HP",
       "classID": "FA3010",
       "subject": ["art"],
-      "classDescription": "Prerequisite: Assessment of musical ability and teacher review",
-      "gradeLevel": [11,12],
+      "classDescription": "Prerequisite: None",
+      "gradeLevel": [10,11,12],
       "ap": true,
       "honors": false,
       "dailyHomework": 20
@@ -1031,7 +1026,7 @@
       "classID": "FA3015",
       "subject": ["art"],
       "classDescription": "Prerequisite: Advanced musicianship skills expected. Audition and teacher approval.",
-      "gradeLevel": [10,11,12],
+      "gradeLevel": [9,10,11,12],
       "ap": false,
       "honors": false,
       "dailyHomework": 20
@@ -1075,7 +1070,7 @@
       "classID": "FA3037",
       "subject": ["art"],
       "classDescription": "Prerequisite: Completion of Ensemble Theatre or higher, an audition, and teacher approval.",
-      "gradeLevel": [12],
+      "gradeLevel": [11,12],
       "ap": false,
       "honors": false,
       "dailyHomework": 0
@@ -1086,33 +1081,13 @@
       "classID": "EL3035",
       "subject": ["art"],
       "classDescription": "Prerequisite: None",
-      "gradeLevel": [10,11,12],
-      "ap": false,
-      "honors": false,
-      "dailyHomework": 0
-  },
-
-  {
-      "className": "Culinary Arts",
-      "classID": "EL3445",
-      "subject": ["art", "elective"],
-      "classDescription": "Prerequisite: 10 Units (2 Semesters) None",
       "gradeLevel": [9,10,11,12],
       "ap": false,
       "honors": false,
       "dailyHomework": 0
   },
 
-  {
-      "className": "Advanced Culinary Arts",
-      "classID": "EL3446",
-      "subject": ["art", "elective"],
-      "classDescription": "Prerequisite: Completion of Culinary Arts with a grade of a B or higher and teacher approval.",
-      "gradeLevel": [10,11,12],
-      "ap": false,
-      "honors": false,
-      "dailyHomework": 0
-  },
+
 
 
 
@@ -1131,14 +1106,36 @@
   },
 
   {
-      "className": "Retail Marketing",
-      "classID": "EL3414",
-      "subject": ["elective"],
-      "classDescription": "Prerequisite: None",
-      "gradeLevel": [9,10,11,12],
-      "ap": false,
-      "honors": false,
-      "dailyHomework": 0
+    "className": "AP Studio Art: 2D Design HP",
+    "classID": "FA3029",
+    "subject": ["elective"],
+    "classDescription": "Prerequisite: Grade of B or higher in Commercial Photography 1.",
+    "gradeLevel": [10,11,12],
+    "ap": false,
+    "honors": false,
+    "dailyHomework": 60
+  },
+
+  {
+    "className": "Culinary Arts",
+    "classID": "EL3445",
+    "subject": ["elective"],
+    "classDescription": "Prerequisite: 10 Units (2 Semesters) None",
+    "gradeLevel": [9,10,11,12],
+    "ap": false,
+    "honors": false,
+    "dailyHomework": 0
+  },
+
+  {
+    "className": "Advanced Culinary Arts",
+    "classID": "EL3446",
+    "subject": ["elective"],
+    "classDescription": "Prerequisite: Completion of Culinary Arts with a grade of a B or higher and teacher approval.",
+    "gradeLevel": [10,11,12],
+    "ap": false,
+    "honors": false,
+    "dailyHomework": 0
   },
 
   {
@@ -1175,21 +1172,10 @@
   },
 
   {
-      "className": "Intro to Design - PLTW 1 P",
-      "classID": "FA4462",
+      "className": "PCC Intro to Business",
+      "classID": "EL0611",
       "subject": ["elective"],
       "classDescription": "Prerequisite: None",
-      "gradeLevel": [9,10,11,12],
-      "ap": false,
-      "honors": false,
-      "dailyHomework": 0
-  },
-
-  {
-      "className": "Principles of Engineering - PLTW 2 P",
-      "classID": "EL4463",
-      "subject": ["elective"],
-      "classDescription": "Prerequisite: of C or better. Completion of PLTW 1 P with grade",
       "gradeLevel": [10,11,12],
       "ap": false,
       "honors": false,
@@ -1197,22 +1183,11 @@
   },
 
   {
-      "className": "Computer Integrated Manufacturing - PLTW 3 P",
-      "classID": "EL4464",
+      "className": "PCC Personal Finance",
+      "classID": "EL0613",
       "subject": ["elective"],
-      "classDescription": "Prerequisite: Teacher recommendation",
-      "gradeLevel": [11,12],
-      "ap": false,
-      "honors": false,
-      "dailyHomework": 0
-  },
-
-  {
-      "className": "Robotics: Design and Development",
-      "classID": "EL9105",
-      "subject": ["elective"],
-      "classDescription": "Prerequisite: Teacher recommendation and co-enrolled in Engineering Club",
-      "gradeLevel": [9,10,11,12],
+      "classDescription": "Prerequisite: None",
+      "gradeLevel": [10,11,12],
       "ap": false,
       "honors": false,
       "dailyHomework": 0
@@ -1276,7 +1251,7 @@
     "gradeLevel": [9,10,11,12],
     "ap": false,
     "honors": false,
-    "dailyHomework": -1
+    "dailyHomework": 180
   },
   {
     "className": "Boys Basketball",
@@ -1317,6 +1292,16 @@
     "ap": false,
     "honors": false,
     "dailyHomework": 150
+  },
+  {
+    "className": "Wrestling",
+    "classID": "PE6116",
+    "subject": ["sport"],
+    "classDescription": "No Prerequisites",
+    "gradeLevel": [9,10,11,12],
+    "ap": false,
+    "honors": false,
+    "dailyHomework": -1
   },
   {
     "className": "Girls Water Polo",
@@ -1378,16 +1363,6 @@
     "honors": false,
     "dailyHomework": -1
   },
-  {
-    "className": "PCC Dance",
-    "classID": "PE6005",
-    "subject": ["sport"],
-    "classDescription": "Prerequisite: Approval to take this course is by PCC and LCHS administrative approval.",
-    "gradeLevel": [9,10,11,12],
-    "ap": false,
-    "honors": false,
-    "dailyHomework": -1
-  },
 
 
 
@@ -1399,28 +1374,18 @@
     "className": "AP Computer Science Principles HP",
     "classID": "EL5020",
     "subject": ["elective"],
-    "classDescription": "Prerequisite: Open to 10-12 grade students.",
+    "classDescription": "Prerequisite: strong written communication skills",
     "gradeLevel": [10,11,12],
     "ap": true,
     "honors": false,
     "dailyHomework": 30
   },
   {
-    "className": "Honors Computer Science C++ P",
-    "classID": "MA5018",
-    "subject": ["elective"],
-    "classDescription": "Prerequisite: Concurrent enrollment in LC Math 1 and good written communication skills",
-    "gradeLevel": [9,10,11,12],
-    "ap": false,
-    "honors": true,
-    "dailyHomework": 30
-  },
-  {
     "className": "Honors Computer Science Python P",
     "classID": "EL5019",
     "subject": ["elective"],
-    "classDescription": "Prerequisite: Grade of B or higher in LC Math 1 or higher and a grade of B or higher in Honors Computer Science C++, competence in previous programming",
-    "gradeLevel": [10,11,12],
+    "classDescription": "Prerequisite: Grade of B or higher in LC Math 1 or concurrent enrollment in LC Math 1",
+    "gradeLevel": [9,10,11,12],
     "ap": false,
     "honors": true,
     "dailyHomework": 30
@@ -1429,7 +1394,7 @@
     "className": "AP Computer Science Java HP",
     "classID": "MA5020",
     "subject": ["elective"],
-    "classDescription": "Prerequisite: Concurrent enrollment in LC Math 3 Advanced or higher, grades of B or higher in LC Math 2 Advanced or its equivalent, grade of B or higher in Honors Computer Science C++ or Honors Computer Science Python, strong written communication skills, previous programming experience, and teacher approval.",
+    "classDescription": "Prerequisite: Concurrent enrollment in LC Math 3 Advanced or higher, grades of B or higher in LC Math 2 Advanced or its equivalent, strong written communication skills, previous programming experience",
     "gradeLevel": [11,12],
     "ap": true,
     "honors": false,
@@ -1474,7 +1439,7 @@
     "classID": "EL6012",
     "subject": ["elective"],
     "classDescription": "No Prerequisites",
-    "gradeLevel": [9,10,11,12],
+    "gradeLevel": [11,12],
     "ap": false,
     "honors": false,
     "dailyHomework": 10
@@ -1484,18 +1449,28 @@
     "classID": "EL2036",
     "subject": ["elective"],
     "classDescription": "No Prerequisites",
-    "gradeLevel": [9,10,11,12],
+    "gradeLevel": [11,12],
     "ap": false,
     "honors": false,
     "dailyHomework": 20
     
   },
   {
-    "className": "Office Aide",
+    "className": "Teacher Aide",
     "classID": "EL9999",
     "subject": ["elective"],
     "classDescription": "No Prerequisites",
-    "gradeLevel": [9,10,11,12],
+    "gradeLevel": [10,11,12],
+    "ap": false,
+    "honors": false,
+    "dailyHomework": 0
+  },
+  {
+    "className": "Office Aide",
+    "classID": "EL9988",
+    "subject": ["elective"],
+    "classDescription": "No Prerequisites",
+    "gradeLevel": [10,11,12],
     "ap": false,
     "honors": false,
     "dailyHomework": 0
@@ -1515,7 +1490,7 @@
     "classID": "IndPro",
     "subject": ["elective"],
     "classDescription": "Prerequisite: Application and teacher and administrator approval; 11-12 graders only.",
-    "gradeLevel": [11,12],
+    "gradeLevel": [12],
     "ap": false,
     "honors": false,
     "dailyHomework": 60
@@ -1561,11 +1536,21 @@
     "dailyHomework": 0
   },
   {
-    "className": "Kinesiology 1-2",
+    "className": "PCC Kinesiology",
     "classID": "FA0641",
     "subject": ["elective"],
     "classDescription": "Prerequisite: Enrollment and participation is based upon approval of LCHS and PCC administration and faculty",
-    "gradeLevel": [9,10,11,12],
+    "gradeLevel": [10,11,12],
+    "ap": false,
+    "honors": false,
+    "dailyHomework": -1
+  },
+  {
+    "className": "PCC Ethnic Studies/ Sociology of the African-American",
+    "classID": "EL0610",
+    "subject": ["elective"],
+    "classDescription": "Prerequisite: Enrollment and participation is based upon approval of LCHS and PCC administration and faculty",
+    "gradeLevel": [10,11,12],
     "ap": false,
     "honors": false,
     "dailyHomework": -1
